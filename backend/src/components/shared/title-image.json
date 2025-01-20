@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_title_images",
+  "info": {
+    "displayName": "titleImage",
+    "icon": "crosshairs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imageLink": {
+     "type": "component",
+     "repeatable": true,
+     "component": "shared.image-link"
+    }
+  }
+}

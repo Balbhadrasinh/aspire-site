@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_icon_img_titles",
+  "info": {
+    "displayName": "iconImgTitle",
+    "icon": "box"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.only-title"
+    },
+    "links":{
+      "type":"component",
+      "component": "shared.link"
+    }
+  }
+}

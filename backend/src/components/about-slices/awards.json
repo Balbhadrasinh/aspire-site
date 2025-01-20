@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_slices_awards",
+  "info": {
+    "displayName": "awards",
+    "icon": "chess-pawn",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "trophies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.lines"
+    }
+  }
+}

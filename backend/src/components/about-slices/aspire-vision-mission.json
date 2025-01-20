@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_slices_aspire_vision_missions",
+  "info": {
+    "displayName": "aspireVisionMission",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "rightDescUp": {
+      "type": "text"
+    },
+    "rightDescDown": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-desc-num"
+    },
+    "secondHeading": {
+      "type": "string"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

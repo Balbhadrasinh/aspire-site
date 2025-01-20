@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_tabs_image_descs",
+  "info": {
+    "displayName": "tabsImageDesc",
+    "icon": "border-none"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "richText": {
+      "type": "richtext"
+    }
+  }
+}

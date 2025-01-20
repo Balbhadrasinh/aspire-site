@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_probs_solutions",
+  "info": {
+    "displayName": "probsSolution",
+    "icon": "person-booth",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardsBgColor": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-text-num"
+    },
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_mega_menu_slices_technologies",
+  "info": {
+    "displayName": "technologies",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "themeColor":{
+      "type": "string"
+    },
+    "firstSection": {
+      "type": "component",
+      "component":"shared.title-detail-imgs"
+    },
+    "secondSection":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.head-img-link"
+    }
+  }
+}

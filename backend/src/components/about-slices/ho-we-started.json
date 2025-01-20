@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_slices_ho_we_starteds",
+  "info": {
+    "displayName": "hoWeStarted",
+    "icon": "building",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple":false
+    },
+    "imgLinks":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image-link"
+    }
+  }
+}

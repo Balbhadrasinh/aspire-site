@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_title_desc_nums",
+  "info": {
+    "displayName": "titleDescNum",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image":{
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "number": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    }
+  }
+}

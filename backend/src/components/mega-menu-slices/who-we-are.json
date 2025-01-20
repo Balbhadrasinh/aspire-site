@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_mega_menu_slices_who_we_ares",
+  "info": {
+    "displayName": "WhoWeAre",
+    "icon": "hand-scissors"
+  },
+  "options": {},
+  "attributes": {
+    "themeColor":{
+      "type": "string"
+    },
+    "firstSection": {
+      "type": "component",
+      "component":"shared.title-detail-img"
+    },
+    "secondSection":{
+      "type": "component",
+      "component":"mega-menu-slices.section2-who-we"
+    },
+    "thirdSection":{
+      "type": "component",
+      "component":"shared.image"
+    }
+  }
+}

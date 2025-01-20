@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_image_titles",
+  "info": {
+    "displayName": "titleImage",
+    "icon": "heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imgIconLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image"
+    }
+  }
+}

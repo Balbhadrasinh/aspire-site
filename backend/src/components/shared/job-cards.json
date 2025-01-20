@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_job_cards",
+  "info": {
+    "displayName": "jobCards",
+    "icon": "sd-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleOne": {
+      "type": "string"
+    },
+    "titleTwo": {
+      "type": "string"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": false,
+      "component":"shared.button"
+    }
+  }
+}

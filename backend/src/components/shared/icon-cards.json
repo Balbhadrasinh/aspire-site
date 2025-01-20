@@ -1,0 +1,44 @@
+{
+    "collectionName": "components_shared_icon_cards",
+    "info": {
+      "displayName": "iconCards",
+      "icon": "icons"
+    },
+    "options": {},
+    "attributes": {
+      "image": {
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ],
+        "type": "media",
+        "multiple": false
+      },
+      "hoverImg": {
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ],
+        "type": "media",
+        "multiple": false
+      },
+      "title": {
+        "type": "string"
+      },
+      "richText": {
+        "type": "richtext"
+      },
+      "bgColor": {
+        "type": "string"
+      },
+      "button": {
+        "type": "component",
+        "repeatable": false,
+        "component": "shared.button"
+      }
+    }
+  }

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_title_rich_buttons",
+  "info": {
+    "displayName": "titleRichButton",
+    "icon": "book-dead"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "text"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "heroImage":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mobileImage":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Rightside": {
+      "type": "boolean"
+    }
+  }
+}

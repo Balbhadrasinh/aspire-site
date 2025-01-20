@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_points",
+  "info": {
+    "displayName": "points",
+    "icon": "chart-pie"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-title"
+    }
+  }
+}

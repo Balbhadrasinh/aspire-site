@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_num_email_addresses",
+  "info": {
+    "displayName": "numEmailAddress",
+    "icon": "chevron-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title":{
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    }
+  }
+}

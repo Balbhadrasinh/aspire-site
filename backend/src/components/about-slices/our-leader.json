@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_slices_our_leaders",
+  "info": {
+    "displayName": "ourLeader",
+    "icon": "bed"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "cards":{
+      "type":"component",
+      "repeatable":true,
+      "component": "about-slices.leader-cards"
+    },
+    "button":{
+      "type":"component",
+      "component":"shared.button"
+    }
+  }
+}

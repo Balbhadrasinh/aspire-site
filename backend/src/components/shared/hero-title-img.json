@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_hero_title_imgs",
+  "info": {
+    "displayName": "heroTitleImg",
+    "icon": "camera",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imgTitle": {
+      "type": "string"
+    },
+    "heroImg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

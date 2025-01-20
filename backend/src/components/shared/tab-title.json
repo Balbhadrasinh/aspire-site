@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_tab_titles",
+  "info": {
+    "displayName": "tabTitle",
+    "icon": "braille"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-desc"
+    }
+  }
+}

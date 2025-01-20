@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_proop_content_seos",
+  "info": {
+    "displayName": "proopContentSeo",
+    "icon": "carrot",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "property": {
+      "type": "enumeration",
+      "enum": [
+        "title",
+        "description",
+        "type",
+        "url",
+        "sitename",
+        "image"
+      ]
+    }
+  }
+}

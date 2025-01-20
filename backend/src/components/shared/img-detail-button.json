@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_img_detail_buttons",
+  "info": {
+    "displayName": "imgDetailButton",
+    "icon": "car-side",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    }
+  }
+}

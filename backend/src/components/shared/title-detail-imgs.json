@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_title_detail_imgs",
+  "info": {
+    "displayName": "titleDetailImgs",
+    "icon": "digital-tachograph"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "button":{
+      "type": "component",
+      "component": "shared.button"
+    },
+    "imageLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image-link"
+    }
+  }
+}

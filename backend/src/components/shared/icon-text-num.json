@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_icon_text_nums",
+  "info": {
+    "displayName": "iconTextNum",
+    "icon": "chevron-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "number": {
+      "type": "string"
+    }
+  }
+}

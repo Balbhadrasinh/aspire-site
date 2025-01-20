@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_slices_your_ideas_our_solutions",
+  "info": {
+    "displayName": "ourSolutions",
+    "icon": "solar-panel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.two-title-cards"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

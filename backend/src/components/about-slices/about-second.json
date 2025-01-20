@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_about_slices_about_seconds",
+  "info": {
+    "displayName": "aboutSecond",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "colorTitle": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "backgroundText": {
+      "type": "string"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "leftHeading": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videoTitle": {
+      "type": "string"
+    },
+    "videoSubTitle": {
+      "type": "string"
+    },
+    "playIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "playIconClass": {
+      "type": "string"
+    },
+    "leftSecond": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    }
+  }
+}

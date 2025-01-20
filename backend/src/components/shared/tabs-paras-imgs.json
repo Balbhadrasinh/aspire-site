@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_shared_tabs_paras_imgs",
+  "info": {
+    "displayName": "tabsParasImgs",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabTitle":{
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string"
+    },
+    "imgIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "text"
+    },
+    "midDesc": {
+      "type": "text"
+    },
+    "shortDesc": {
+      "type": "text"
+    },
+    "insideImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgColor":{
+      "type": "string"
+    },
+    "linkTag":{
+      "type": "component", 
+      "repeatable": false,
+      "component":"shared.link"
+    }
+  }
+}

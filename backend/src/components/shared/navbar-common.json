@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_navbar_commons",
+  "info": {
+    "displayName": "navbarCommon",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "richText": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contactUs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

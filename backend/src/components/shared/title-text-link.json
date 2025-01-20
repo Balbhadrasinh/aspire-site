@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_title_text_links",
+  "info": {
+    "displayName": "titleTextLink",
+    "icon": "bolt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "iconClass": {
+      "type": "string"
+    },
+    "contact":{
+      "type":"component",
+      "repeatable":true,
+      "component":"shared.link"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "sector": {
+      "type": "string"
+    }
+  }
+}

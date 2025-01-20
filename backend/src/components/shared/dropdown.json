@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_dropdowns",
+  "info": {
+    "displayName": "dropdown",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    }
+  }
+}

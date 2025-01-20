@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_icon_titles",
+  "info": {
+    "displayName": "iconTitle",
+    "icon": "deaf"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "href" :{
+      "type" : "string"
+    }
+  }
+}

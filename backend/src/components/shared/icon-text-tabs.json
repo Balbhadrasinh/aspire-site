@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_icon_text_tabs",
+  "info": {
+    "displayName": "iconTextTabs",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-rich-reap"
+    }
+  }
+}

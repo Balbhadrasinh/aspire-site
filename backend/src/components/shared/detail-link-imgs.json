@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_detail_link_imgs",
+  "info": {
+    "displayName": "detailLinkImgs",
+    "icon": "broadcast-tower"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "imagesWithTags":{
+      "type": "component",
+      "repeatable": true,
+      "component":"shared.image-title"
+    }
+  }
+}

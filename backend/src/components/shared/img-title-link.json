@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_img_title_links",
+  "info": {
+    "displayName": "imgTitleLink",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

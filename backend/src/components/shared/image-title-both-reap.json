@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_image_title_both_reaps",
+  "info": {
+    "displayName": "imageTitleBothReap",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "hoverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "number": {
+      "type": "string"
+    },
+    "link":{
+      "type":"component",
+      "component": "shared.link"
+    }
+  }
+}

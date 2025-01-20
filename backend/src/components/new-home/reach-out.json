@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_new_home_reach_outs",
+  "info": {
+    "displayName": "reachOut",
+    "icon": "calendar-day",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "titleOne": {
+      "type": "string"
+    },
+    "numberValue": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.two-title-reapeatable"
+    },
+    "titleTwo": {
+      "type": "string"
+    },
+    "bedgeImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-link"
+    },
+    "iconLink":{
+      "type": "component",
+      "repeatable" :true,
+      "component": "shared.icon-link"
+    }
+  }
+}

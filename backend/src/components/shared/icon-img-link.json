@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_icon_img_links",
+  "info": {
+    "displayName": "iconImgLink",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "iconBgColor":{
+      "type":"string"
+    },
+    "iconLabel" : {
+      "type":"string"
+    },
+    "smallDesc":{
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

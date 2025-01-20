@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_slices_what_we_dos",
+  "info": {
+    "displayName": "whatWeDo",
+    "icon": "clipboard-check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.hero-title-img"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

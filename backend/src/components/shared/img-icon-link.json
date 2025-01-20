@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_img_icon_links",
+  "info": {
+    "displayName": "imgIconLink",
+    "icon": "biking"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "details":{
+      "type": "text"
+    },
+    "title":{
+      "type": "string"
+    },  
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

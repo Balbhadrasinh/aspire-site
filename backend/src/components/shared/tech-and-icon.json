@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_tech_and_icons",
+  "info": {
+    "displayName": "techAndIcon",
+    "icon": "battery-half"
+  },
+  "options": {},
+  "attributes": {
+    "techName": {
+      "type": "string"
+    },
+    "bgColor":{
+      "type": "string"
+    },
+    "techs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-icon-name"
+    }
+  }
+}

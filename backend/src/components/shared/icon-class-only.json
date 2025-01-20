@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_icon_class_onlies",
+  "info": {
+    "displayName": "iconClassOnly",
+    "icon": "book-medical"
+  },
+  "options": {},
+  "attributes": {
+    "iconClassOnly": {
+      "type": "string"
+    }
+  }
+}

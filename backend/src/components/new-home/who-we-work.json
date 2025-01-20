@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_new_home_who_we_works",
+  "info": {
+    "displayName": "whoWeWork",
+    "icon": "border-style"
+  },
+  "options": {},
+  "attributes": {
+    "headTitle":{
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tabs":{
+      "type": "component",
+      "repeatable": true,
+      "component":"shared.tab-title"
+    }
+  }
+}

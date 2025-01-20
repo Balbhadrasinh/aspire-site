@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_icon_title_links",
+  "info": {
+    "displayName": "iconTitleLink",
+    "icon": "basketball-ball"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

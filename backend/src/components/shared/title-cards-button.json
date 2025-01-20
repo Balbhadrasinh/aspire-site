@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_title_cards_buttons",
+  "info": {
+    "displayName": "titleCardsButton",
+    "icon": "bezier-curve"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-img-title"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    }
+  }
+}

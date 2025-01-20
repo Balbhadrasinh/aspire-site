@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aboutPage": {
+      "type": "dynamiczone",
+      "components": [
+        "about-slices.aspire-core-values",
+        "about-slices.aspire-vision-mission",
+        "about-slices.about-rprocess",
+        "about-slices.awards",
+        "about-slices.ho-we-started",
+        "about-slices.our-leader",
+        "about-slices.partn-us",
+        "shared.seo"
+      ]
+    }
+  }
+}

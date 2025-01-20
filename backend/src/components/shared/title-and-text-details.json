@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_title_and_text_details",
+  "info": {
+    "displayName": "TitleAndTextDetails",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

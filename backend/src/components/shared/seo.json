@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "text",
+      "required": false
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "sharedImage": {
+      "type": "component",
+      "repeated": true,
+      "component": "shared.seo-image"
+    },
+    "index": {
+      "type": "boolean"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "canonicalUrl": {
+      "type": "string"
+    },
+    "metaOgProperty": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.proop-content-seo"
+    },
+    "follow": {
+      "type": "boolean"
+    },
+    "twitter": {
+      "type": "component",
+      "component": "shared.twitter-seo"
+    },
+    "ratingValue": {
+      "type": "float"
+    },
+    "ratingCount": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_mega_menu_slices_what_we_dos",
+  "info": {
+    "displayName": "WhatWeDo",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "themeColor":{
+      "type": "string"
+    },
+    "firstSection": {
+      "type": "component",
+      "component":"shared.title-detail-imgs"
+    },
+    "secondSection":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.nav-links"
+    },
+    "thirdSection":{
+      "type": "component",
+      "component":"shared.image"
+    }
+  }
+}

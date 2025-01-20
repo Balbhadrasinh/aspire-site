@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_lines",
+  "info": {
+    "displayName": "lines",
+    "icon": "ban",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "first": {
+      "type": "string"
+    },
+    "second": {
+      "type": "string"
+    },
+    "third": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

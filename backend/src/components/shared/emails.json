@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_emails",
+  "info": {
+    "displayName": "Emails",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Sender": {
+      "type": "string"
+    },
+    "Receiver": {
+      "type": "string"
+    }
+  }
+}

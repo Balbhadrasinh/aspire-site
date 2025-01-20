@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_our_partners",
+  "info": {
+    "displayName": "ourPartners",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imgLinkDesc": {
+      "displayName": "imgLinkDesc",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-link-desc"
+    }
+  }
+}

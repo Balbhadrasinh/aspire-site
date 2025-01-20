@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_tabs_itlds",
+  "info": {
+    "displayName": "tabs-itld",
+    "icon": "caret-square-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.itld"
+    }
+  }
+}

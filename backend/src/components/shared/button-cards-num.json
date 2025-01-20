@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_button_cards_nums",
+  "info": {
+    "displayName": "buttonCardsNum",
+    "icon": "cart-arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "cards":{
+      "type": "component",
+      "repeatable": true,
+      "component":"shared.cards-with-num"
+    }
+  }
+}

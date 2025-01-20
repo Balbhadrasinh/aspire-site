@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_two_color_cards",
+  "info": {
+    "displayName": "twoColorCard",
+    "icon": "backward",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "richtext"
+    },
+    "details": {
+      "type": "text"
+    }
+  }
+}

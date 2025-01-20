@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_img_icon_names",
+  "info": {
+    "displayName": "imgIconName",
+    "icon": "caret-down"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+
+  }
+}

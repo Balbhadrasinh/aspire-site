@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_new_home_new_home_heroes",
+  "info": {
+    "displayName": "newHomeHero",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "heroText":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-rich-button"
+    },
+    "heroImage":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "logoImage":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "logoTitle":{
+      "type":"string"
+    }
+  }
+}

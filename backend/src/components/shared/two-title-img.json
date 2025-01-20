@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_two_title_imgs",
+  "info": {
+    "displayName": "twoTitleImg",
+    "icon": "bicycle"
+  },
+  "options": {},
+  "attributes": {
+    "topTitle": {
+      "type": "string"
+    },
+    "bottomTitle": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

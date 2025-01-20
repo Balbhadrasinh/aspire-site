@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_cards_with_nums",
+  "info": {
+    "displayName": "cardsWithNum",
+    "icon": "chevron-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

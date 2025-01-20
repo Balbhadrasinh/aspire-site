@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_shared_cards_with_bg_imgs",
+  "info": {
+    "displayName": "cards-with-bg-img",
+    "icon": "hat-cowboy-side",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardTag": {
+      "type": "string"
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "coreTechHeading": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "coreTech": {
+      "type": "string"
+    },
+    "button":{
+      "type": "component",
+      "component": "shared.button"
+    }
+  }
+}

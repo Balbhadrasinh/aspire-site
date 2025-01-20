@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_title_desc_icon_classes",
+  "info": {
+    "displayName": "titleDescIconClass",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+projectKey=aspire-site
+serverUrl=https://sonar.aspiresoftware.in
+serverVersion=9.0.1.46107
+dashboardUrl=https://sonar.aspiresoftware.in/dashboard?id=aspire-site
+ceTaskId=AYUVdeZ9UDpXMir00lKw
+ceTaskUrl=https://sonar.aspiresoftware.in/api/ce/task?id=AYUVdeZ9UDpXMir00lKw

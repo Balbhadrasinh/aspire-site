@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_img_icon_class_descs",
+  "info": {
+    "displayName": "imgIconClassDesc",
+    "icon": "bomb"
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

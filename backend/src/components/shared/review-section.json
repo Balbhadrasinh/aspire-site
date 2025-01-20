@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_review_sections",
+  "info": {
+    "displayName": "ReviewSection",
+    "icon": "chartCircle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reviewImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tabs-image-desc"
+    },
+    "is_visible": {
+      "type": "boolean"
+    }
+  }
+}

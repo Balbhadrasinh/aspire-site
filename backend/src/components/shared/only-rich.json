@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_only_riches",
+  "info": {
+    "displayName": "onlyRich",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "richtext"
+    }
+  }
+}

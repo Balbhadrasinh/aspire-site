@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_icon_title_descs",
+  "info": {
+    "displayName": "iconTitleDesc",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "iconClass": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

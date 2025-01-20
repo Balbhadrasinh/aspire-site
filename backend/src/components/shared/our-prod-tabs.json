@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_our_prod_tabs",
+  "info": {
+    "displayName": "ourProdTabs",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "tabTitle": {
+      "type": "string"
+    },
+    "headerTitle": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "query": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon-text-tabs"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

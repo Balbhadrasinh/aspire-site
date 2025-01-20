@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_new_home_projectin_minds",
+  "info": {
+    "displayName": "projectinMind",
+    "icon": "bowling-ball",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "subTitleOne": {
+      "type": "string"
+    },
+    "subTitleTwo": {
+      "type": "string"
+    },
+    "links":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    }
+  }
+}

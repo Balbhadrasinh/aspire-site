@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_image_link_repeatables",
+  "info": {
+    "displayName": "imageLinkRepeatable",
+    "icon": "ankh",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

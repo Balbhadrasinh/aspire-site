@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_thank_you_cards",
+  "info": {
+    "displayName": "thankYouCard",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "heroImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "colorTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "shortText": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-link"
+    }
+  },
+  "bottomText": {
+    "type":"string"
+  },
+  "is_visible": {
+    "type": "boolean",
+    "default": true
+  }
+}

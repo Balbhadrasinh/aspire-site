@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_head_img_links",
+  "info": {
+    "displayName": "headImgLink",
+    "icon": "broom"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imgIconLink":{
+      "type": "component",
+      "repeatable":true,
+      "component": "shared.icon-img-link"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_twitter_seos",
+  "info": {
+    "displayName": "twitterSeo",
+    "icon": "campground",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

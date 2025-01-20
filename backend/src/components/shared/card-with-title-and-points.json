@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_card_with_title_and_points",
+  "info": {
+    "displayName": "CardWithTitleAndPoints",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "cardTitle": {
+      "type": "string"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-and-text-details"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    }
+  }
+}

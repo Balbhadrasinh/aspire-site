@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_slices_we_simplify_softwares",
+  "info": {
+    "displayName": "weSimplifySoftware",
+    "icon": "balance-scale-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "weSimplifySoftwareCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-desc"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

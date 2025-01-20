@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_mega_menu_slices_section2_who_wes",
+  "info": {
+    "displayName": "section2WhoWe",
+    "icon": "fan"
+  },
+  "options": {},
+  "attributes": {
+    "secondSectionLeft":{
+      "type": "component",
+      "component":"shared.head-img-link"
+    },
+    "secondSectionRight":{
+      "type": "component",
+      "component":"shared.head-img-link"
+    },
+    "images":{
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

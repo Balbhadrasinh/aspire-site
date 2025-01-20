@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_about_slices_leader_cards",
+  "info": {
+    "displayName": "leaderCards",
+    "icon": "bug"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "pic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "linkedClass": {
+      "type": "string"
+    }
+  }
+}
+

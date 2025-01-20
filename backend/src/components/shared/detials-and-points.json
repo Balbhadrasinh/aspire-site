@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_detials_and_points",
+  "info": {
+    "displayName": "detialsAndPoints",
+    "icon": "calendar-week"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-title"
+    },
+    "cardBg":{
+      "type" : "string"
+    },
+    "button":{
+      "type": "component",
+      "component": "shared.button"
+    }
+  }
+}

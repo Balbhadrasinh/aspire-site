@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_two_title_reapeatables",
+  "info": {
+    "displayName": "twoTitleReapeatable",
+    "icon": "text-width"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

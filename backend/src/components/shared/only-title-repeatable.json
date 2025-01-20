@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_only_title_repeatables",
+  "info": {
+    "displayName": "onlyTitleRepeatable",
+    "icon": "text-height",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "iconClass": {
+      "type": "string"
+    }
+  }
+}

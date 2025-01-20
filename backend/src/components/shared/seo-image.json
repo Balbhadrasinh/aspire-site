@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_seo_images",
+  "info": {
+    "displayName": "seo-image",
+    "icon": "laugh-wink"
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

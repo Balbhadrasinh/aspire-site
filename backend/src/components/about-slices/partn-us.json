@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_about_slices_partnuses",
+  "info": {
+    "displayName": "partnUs",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

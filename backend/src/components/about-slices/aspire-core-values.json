@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_about_slices_aspire_core_values",
+  "info": {
+    "displayName": "aspireCoreValues",
+    "icon": "arrow-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.only-title-img-rich"
+    },
+    "button":{
+      "type":"component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
