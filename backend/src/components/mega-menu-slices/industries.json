@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_mega_menu_slices_industries",
+  "info": {
+    "displayName": "Industries"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tab":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.img-detail-button"
+    }
+  }
+}

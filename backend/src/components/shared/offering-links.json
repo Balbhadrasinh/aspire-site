@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_offering_links",
+  "info": {
+    "displayName": "offering-links",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mainTitle":{
+      "type": "component",
+      "repeatable":false,
+      "component":"shared.link"
+    },
+    "subTitle":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.link"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "mega_menus",
+  "info": {
+    "singularName": "mega-menu",
+    "pluralName": "mega-menus",
+    "displayName": "megaMenu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ParentLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "menus": {
+      "type": "dynamiczone",
+      "components": [
+        "mega-menu-slices.offerings",
+        "mega-menu-slices.industries",
+        "mega-menu-slices.company",
+        "mega-menu-slices.resources"
+      ]
+    }
+  }
+}

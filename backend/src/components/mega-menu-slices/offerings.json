@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_mega_menu_slices_offerings",
+  "info": {
+    "displayName": "Offerings",
+    "icon": "manyToMany"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "tab":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.offering-links"
+    }
+  }
+}

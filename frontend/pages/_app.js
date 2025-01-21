@@ -8,8 +8,8 @@ function Aspire({ Component, pageProps }) {
     <>
       <div>
         <ApolloProvider client={client}>
-          {/* <NavBar/> */}
-              <Component {...pageProps} />
+          <NavBar />
+          <Component {...pageProps} />
         </ApolloProvider>
       </div>
     </>

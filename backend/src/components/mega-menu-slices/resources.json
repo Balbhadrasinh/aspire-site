@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_mega_menu_slices_resources",
+  "info": {
+    "displayName": "Resources",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tab":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.img-detail-button"
+    }
+  }
+}
