@@ -12,7 +12,6 @@ const NewHomePageProjectInMind = ({ project }) => {
             <h2 className="py-4 text-white project-in-mind">
               {project?.title}
             </h2>
-
             <span className="text-[white] text-[1.8rem]">
               {project?.subTitleOne}
             </span>

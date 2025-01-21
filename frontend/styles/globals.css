@@ -1608,11 +1608,11 @@ input {
 
 .project-in-mind {
   font-size: 3.75rem !important;
-  width: 80%;
+  width: 60%;
   letter-spacing: 0.5px;
   background-color: transparent;
-  font-weight: 800;
-  line-height: 4.5rem !important;
+  font-weight: 600;
+  line-height: 4rem !important;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .blog-cta-text {
