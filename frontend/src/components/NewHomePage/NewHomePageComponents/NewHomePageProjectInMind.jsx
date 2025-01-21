@@ -4,7 +4,6 @@ import React from "react";
 
 const NewHomePageProjectInMind = ({ project }) => {
 
-  console.log(project, "inside comopon")
   return (
     <div className="bg-[#011D45] py-4 px-4 sm:px-12 md:px-0">
       <div className="container  mx-auto mb-4">

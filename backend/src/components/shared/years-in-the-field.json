@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_years_in_the_fields",
+  "info": {
+    "displayName": "yearsInTheField",
+    "icon": "doctor"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.two-title-reapeatable"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

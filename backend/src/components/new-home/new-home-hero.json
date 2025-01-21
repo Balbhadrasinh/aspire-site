@@ -6,33 +6,42 @@
   },
   "options": {},
   "attributes": {
-    "heroText":{
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "text"
+    },
+    "button": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.title-rich-button"
+      "component": "shared.button"
     },
-    "heroImage":{
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "heroImage": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
       "multiple": false
     },
-    "logoImage":{
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "mobileImage": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
       "multiple": false
     },
-    "logoTitle":{
-      "type":"string"
+    "Rightside": {
+      "type": "boolean"
+    },
+    "partnersTitle": {
+      "type": "string"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-link"
+    },
+    "yearsField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.years-in-the-field"
     }
   }
 }

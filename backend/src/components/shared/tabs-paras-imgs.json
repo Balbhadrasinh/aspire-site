@@ -32,6 +32,11 @@
     "shortDesc": {
       "type": "text"
     },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
     "insideImg": {
       "allowedTypes": [
         "images",

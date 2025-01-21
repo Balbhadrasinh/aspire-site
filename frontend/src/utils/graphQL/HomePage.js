@@ -1,22 +1,48 @@
 import { gql } from "@apollo/client";
-
 const HOME_PAGE = gql`
   query {
     homepage {
       landingPage {
         ... on ComponentNewHomeNewHomeHero {
           __typename
-          heroText {
-            title
-            richText
-            button {
-              link {
-                href
-                label
-              }
+          title
+          richText
+          newHomeHeroButtons: button {
+            textColor
+            link {
+              href
+              label
+              target
             }
           }
-          logoTitle
+          heroImage {
+            url
+            alternativeText
+          }
+          mobileImage {
+            url
+            alternativeText
+          }
+          partnersTitle
+          partners {
+            image {
+              url
+              alternativeText
+            }
+            title
+            link {
+              href
+              label
+              target
+            }
+          }
+          yearsField {
+            cards {
+              number
+              title
+            }
+            is_visible
+          }
         }
         ... on ComponentNewHomeResultsDriven {
           __typename
@@ -30,6 +56,14 @@ const HOME_PAGE = gql`
             heading
             midDesc
             shortDesc
+            insideImg {
+              url
+              alternativeText
+            }
+            keywords {
+              href
+              label
+            }
             linkTag {
               href
               label
@@ -56,7 +90,6 @@ const HOME_PAGE = gql`
           __typename
           title
           description
-        
         }
         ... on ComponentNewHomeWhatWeOffer {
           __typename
@@ -75,7 +108,7 @@ const HOME_PAGE = gql`
             cards {
               id
               iconClass
-           
+
               title
               tags {
                 id
@@ -102,7 +135,7 @@ const HOME_PAGE = gql`
               title
               description
               iconClass
-           
+
               links {
                 href
                 target
@@ -137,7 +170,7 @@ const HOME_PAGE = gql`
           titleTwo
           bedgeImage {
             title
-         
+
             link {
               href
               label
@@ -152,7 +185,6 @@ const HOME_PAGE = gql`
               label
             }
           }
-        
         }
         ... on ComponentNewHomeMainHero {
           __typename
@@ -173,7 +205,6 @@ const HOME_PAGE = gql`
           __typename
           title
           imgLinkDesc {
-          
             link {
               href
               label
@@ -182,10 +213,8 @@ const HOME_PAGE = gql`
           }
         }
       }
-    
     }
   }
-
 `;
 
 export { HOME_PAGE };
