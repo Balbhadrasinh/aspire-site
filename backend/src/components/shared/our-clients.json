@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_our_clients",
+  "info": {
+    "displayName": "ourClients",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "firstImageRow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

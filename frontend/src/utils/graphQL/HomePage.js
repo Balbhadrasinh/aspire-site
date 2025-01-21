@@ -86,10 +86,20 @@ const HOME_PAGE = gql`
             }
           }
         }
-        ... on ComponentNewHomeTrustedByHundreds {
+        ... on ComponentSharedOurClients {
           __typename
           title
-          description
+          heading
+          firstImageRow {
+            image {
+              url
+              alternativeText
+            }
+            link {
+              href
+              label
+            }
+          }
         }
         ... on ComponentNewHomeWhatWeOffer {
           __typename
