@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_new_home_industries",
+  "info": {
+    "displayName": "Industries",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tabs":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tabs-paras-imgs"
+    }
+  }
+}

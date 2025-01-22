@@ -1,5 +1,6 @@
 import ClientsSection from "./NewHomePageComponents/ClientsSection";
 import HeroSection from "./NewHomePageComponents/HeroSection";
+import Industries from "./NewHomePageComponents/Industries";
 import NewHomePageProjectInMind from "./NewHomePageComponents/NewHomePageProjectInMind";
 import Offerings from "./NewHomePageComponents/Offerings";
 import ResultDriven from "./NewHomePageComponents/ResultDriven";
@@ -26,6 +27,9 @@ const NewHomePageLayout = ({ homePageData }) => {
   const successData = homePageSectionData.find(
     (section) => section.__typename === "ComponentNewHomeSuccessStories"
   );
+  const industriesData = homePageSectionData.find(
+    (section) => section.__typename === "ComponentNewHomeIndustries"
+  );
 
 
   return (
@@ -36,6 +40,7 @@ const NewHomePageLayout = ({ homePageData }) => {
       <ClientsSection clientData={clientData}/>
       <Offerings offeringsData={offeringsData} />
       <SuccessStories successData={successData} />
+      <Industries industriesData={industriesData}/>
       <h1>hii</h1>
     </>
   );

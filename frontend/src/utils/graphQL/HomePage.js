@@ -150,6 +150,36 @@ const HOME_PAGE = gql`
             }
           }
         }
+        ... on ComponentNewHomeIndustries {
+          __typename
+          title
+          description
+          tabs {
+            tabTitle
+            id
+            bgColor
+            iconClass
+            heading
+            midDesc
+            shortDesc
+            imgIcon {
+              url
+              alternativeText
+            }
+            insideImg {
+              url
+              alternativeText
+            }
+            keywords {
+              href
+              label
+            }
+            linkTag {
+              href
+              label
+            }
+          }
+        }
         ... on ComponentNewHomeMainHero {
           __typename
           heroText {

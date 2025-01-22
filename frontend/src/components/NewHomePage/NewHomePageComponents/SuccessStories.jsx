@@ -6,7 +6,6 @@ import Images from "../../Shared/Image";
 import Links from "../../Shared/Links";
 
 const SuccessStories = ({ successData }) => {
-  console.log(successData, "successData");
   return (
     <div className="mx-auto rounded-xl relative w-full">
       <div className="container pt-24 relative mx-auto">
