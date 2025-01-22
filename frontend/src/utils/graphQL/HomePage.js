@@ -124,6 +124,32 @@ const HOME_PAGE = gql`
             }
           }
         }
+        ... on ComponentNewHomeSuccessStories {
+          __typename
+          title
+          description
+          tabs {
+            tabTitle
+            id
+            bgColor
+            iconClass
+            heading
+            midDesc
+            shortDesc
+            insideImg {
+              url
+              alternativeText
+            }
+            keywords {
+              href
+              label
+            }
+            linkTag {
+              href
+              label
+            }
+          }
+        }
         ... on ComponentNewHomeMainHero {
           __typename
           heroText {

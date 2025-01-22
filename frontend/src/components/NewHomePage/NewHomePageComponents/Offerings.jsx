@@ -33,14 +33,17 @@ const Offerings = ({ offeringsData }) => {
           {offeringsData?.tab &&
             offeringsData?.tab?.map((tabData, index) => (
               <SwiperSlide key={index}>
-                <div className="group p-16 hover:bg-[#0D1B2F] bg-white shadow-lg rounded-lg p-6 mx-4 h-full flex flex-col cursor-pointer transition-all relative overflow-hidden">
+                <div className="group px-12 py-12 hover:bg-[#0D1B2F] bg-white shadow-lg rounded-lg p-6 mx-4 h-full flex flex-col cursor-pointer transition-all relative overflow-hidden">
                   <p className="text-[3rem] leading-[3.5rem] font-[400] text-[#0D1B2F] group-hover:text-white mb-4">
                     {tabData?.title}
                   </p>
                   <div className="space-y-2 flex-grow">
                     {tabData?.subTitle &&
                       tabData?.subTitle?.map((subtitle, subIndex) => (
-                        <div className="flex items-center gap-4" key={subIndex}>
+                        <div
+                          className="flex px-8 py-1 items-center gap-4"
+                          key={subIndex}
+                        >
                           <p className="w-4 h-4 bg-red-500 rounded-full"></p>
                           <p className="text-[#0D1B2FCC] mt-1 text-[1.4rem] group-hover:text-white ">
                             {subtitle?.label}
@@ -48,7 +51,7 @@ const Offerings = ({ offeringsData }) => {
                         </div>
                       ))}
                   </div>
-                  <div className="relative mt-24 hover:border-blue-500 w-full mx-auto rounded-full h-32 border-2 border-gray-300 bg-white mt-4 overflow-hidden">
+                  <div className="relative mt-32 hover:border-blue-500 w-full mx-auto rounded-full h-32 border-2 border-gray-300 bg-white mt-4 overflow-hidden">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex items-center justify-center">
                       <Images
                         src={tabData?.bgImage?.url}

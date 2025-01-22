@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_new_home_success_stories",
+  "info": {
+    "displayName": "SuccessStories",
+    "icon": "emotionUnhappy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tabs":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tabs-paras-imgs"
+    }
+  }
+}
