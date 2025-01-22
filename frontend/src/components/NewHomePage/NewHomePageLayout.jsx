@@ -19,6 +19,9 @@ const NewHomePageLayout = ({ homePageData }) => {
   const clientData = homePageSectionData.find(
     (section) => section.__typename === "ComponentSharedOurClients"
   );
+  const offeringsData = homePageSectionData.find(
+    (section) => section.__typename === "ComponentNewHomeOfferings"
+  );
 
 
   return (
@@ -27,7 +30,7 @@ const NewHomePageLayout = ({ homePageData }) => {
       <ResultDriven resultDriven={ResultDrivenData} />
       <NewHomePageProjectInMind project={projectInMindData} />
       <ClientsSection clientData={clientData}/>
-      <Offerings ourClients={clientData} />
+      <Offerings offeringsData={offeringsData} />
       <h1>hii</h1>
     </>
   );

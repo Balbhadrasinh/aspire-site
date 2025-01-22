@@ -101,98 +101,26 @@ const HOME_PAGE = gql`
             }
           }
         }
-        ... on ComponentNewHomeWhatWeOffer {
+        ... on ComponentNewHomeOfferings {
           __typename
-          headTitle
-          title
-          description
-          tabs {
-            button {
-              link {
-                href
-                label
-              }
+          Title
+          tab {
+            title
+            bgImage {
+              url
+              alternativeText
             }
-            id
-            title
-            cards {
-              id
-              iconClass
-
-              title
-              tags {
-                id
-                title
-              }
-              links {
-                href
-                target
-              }
-            }
-          }
-        }
-        ... on ComponentNewHomeWhoWeWork {
-          __typename
-          headTitle
-          title
-          description
-          tabs {
-            id
-            title
-            cards {
-              id
-              bgColor
-              title
-              description
-              iconClass
-
-              links {
-                href
-                target
-              }
-            }
-          }
-        }
-        ... on ComponentNewHomeWhyChooseAspire {
-          __typename
-          title
-          description
-          cards {
-            id
-            title
-            cards {
-              id
-              title
-              description
-              iconClass
-            }
-          }
-        }
-        ... on ComponentNewHomeReachOut {
-          __typename
-          title
-          description
-          titleOne
-          numberValue {
-            number
-            title
-          }
-          titleTwo
-          bedgeImage {
-            title
-
-            link {
+            headingOne
+            headingTwo
+            mainTitle {
               href
               label
               target
             }
-          }
-          iconLink {
-            bgColor
-            iconClass
-            link {
+            subTitle {
               href
               label
+              target
             }
           }
         }
@@ -210,17 +138,6 @@ const HOME_PAGE = gql`
             Rightside
           }
           logoTitle
-        }
-        ... on ComponentSharedOurPartners {
-          __typename
-          title
-          imgLinkDesc {
-            link {
-              href
-              label
-            }
-            description
-          }
         }
       }
     }

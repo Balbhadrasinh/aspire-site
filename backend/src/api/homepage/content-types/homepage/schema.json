@@ -16,17 +16,11 @@
       "type": "dynamiczone",
       "components": [
         "new-home.new-home-hero",
-        "new-home.reach-out",
         "new-home.results-driven",
-        "new-home.trusted-by-hundreds",
-        "new-home.what-we-offer",
-        "new-home.who-we-work",
-        "new-home.why-choose-aspire",
+        "new-home.offerings",
         "new-home.projectin-mind",
-        "shared.seo",
         "shared.our-clients",
-        "new-home.main-hero",
-        "shared.our-partners"
+        "new-home.main-hero"
       ]
     }
   

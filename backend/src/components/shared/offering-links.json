@@ -9,6 +9,23 @@
     "title": {
       "type": "string"
     },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "headingOne":{
+      "type": "richtext"
+    },
+    "headingTwo":{
+      "type": "richtext"
+    },
     "mainTitle":{
       "type": "component",
       "repeatable":false,

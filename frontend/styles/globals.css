@@ -2676,3 +2676,35 @@ figure[class="image image_resized image-style-block-align-left"] {
 .scrollSmooth {
   scroll-behavior: smooth;
 }
+
+/* Custom styles for the Swiper buttons */
+.offerings-swiper-button-next,
+.offerings-swiper-button-prev {
+  width: 3rem; /* Adjust size as needed */
+  height: 3rem; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: #868e96;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.offerings-swiper-button-next::after,
+.offerings-swiper-button-prev::after {
+  font-family: "swiper-icons"; /* Required for Swiper icons */
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #868e96; /* Icon color */
+}
+
+.offerings-swiper-button-next:hover,
+.offerings-swiper-button-prev:hover {
+  background-color: #868e96; /* Hover background color */
+}
+
+/* Hover effect for cards */
+.group:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}

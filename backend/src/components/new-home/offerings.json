@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_new_home_offerings",
+  "info": {
+    "displayName": "Offerings",
+    "icon": "store"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "tab":{
+      "type": "component",
+      "repeatable":true,
+      "component":"shared.offering-links"
+    }
+  }
+}

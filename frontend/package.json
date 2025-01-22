@@ -22,13 +22,9 @@
     "apollo-upload-client": "17.0.0",
     "autoprefixer": "10.4.14",
     "braces": "3.0.3",
-    "cookies-next": "2.1.1",
-    "feed": "4.2.2",
     "graphql": "16.10.0",
     "jquery": "3.6.4",
     "next": "15.1.4",
-    "next-seo": "6.1.0",
-    "next-sitemap": "4.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hook-form": "7.54.2",
@@ -36,12 +32,9 @@
     "react-router-dom": "6.10.0",
     "rehype-raw": "6.1.1",
     "sharp": "0.33.2",
-    "slick-carousel": "1.8.1",
     "styled-components": "5.3.11",
-    "svg-captcha": "1.4.0",
-    "tailwindcss": "3.3.2",
-    "vcard-creator": "0.7.1",
-    "yup": "0.32.11"
+    "swiper": "11.2.1",
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
     "@types/jquery": "3.5.16",
