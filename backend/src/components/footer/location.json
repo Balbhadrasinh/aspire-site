@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_locations",
+  "info": {
+    "displayName": "Location",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-text-link"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

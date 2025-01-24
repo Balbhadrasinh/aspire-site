@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_footer_abouts",
+  "info": {
+    "displayName": "about",
+    "icon": "tablets"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "shortAbout": {
+      "type": "text"
+    },
+    "socialLinks":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-img-link"
+    }
+  }
+}

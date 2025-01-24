@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_discovers",
+  "info": {
+    "displayName": "Discover",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

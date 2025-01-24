@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_start_convos",
+  "info": {
+    "displayName": "startConvo",
+    "icon": "glass-cheers"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links":{
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-link"
+    }
+  }
+}

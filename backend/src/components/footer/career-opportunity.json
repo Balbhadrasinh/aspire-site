@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_career_opportunities",
+  "info": {
+    "displayName": "careerOpportunity",
+    "icon": "blind"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contactUs": {
+      "type": "json"
+    },
+    "button":{
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+      "is_visible": {
+        "type": "boolean",
+        "default": true
+      }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_careers",
+  "info": {
+    "displayName": "Careers"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}
