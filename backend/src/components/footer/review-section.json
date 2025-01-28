@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_footer_review_sections",
+  "info": {
+    "displayName": "ReviewSection",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "tab": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image-text-image"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
+

@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_footer_locations",
+  "collectionName": "components_footer_areas_we_serves",
   "info": {
-    "displayName": "Location",
-    "icon": "stack"
+    "displayName": "areasWeServe",
+    "icon": "sun"
   },
   "options": {},
   "attributes": {

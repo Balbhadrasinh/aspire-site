@@ -89,7 +89,7 @@
     @apply rounded-md flex items-center gap-1 min-w-fit py-[1.7rem] px-[3.2rem] hover:shadow-lg text-[1.8rem] shadow-slate-800 text-white font-semibold cursor-pointer;
   }
   .btn-primary-transparent {
-    @apply rounded-md flex items-center gap-1 min-w-fit py-[1.4rem] px-[3.2rem] hover:shadow-lg text-[1.8rem] shadow-slate-800 text-white font-semibold cursor-pointer;
+    @apply rounded-md flex items-center gap-1 min-w-fit py-[1.4rem] px-[3.2rem] hover:shadow-lg border-2 text-[1.6rem] shadow-slate-800 text-[#0D1B2F] font-semibold cursor-pointer;
   }
 
   .casestudy-label {

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_image_text_images",
+  "info": {
+    "displayName": "imageTextImage",
+    "icon": "underline"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "platformImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "starImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "rank": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

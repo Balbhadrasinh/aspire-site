@@ -50,8 +50,6 @@ const NewHomePageLayout = ({ homePageData }) => {
       <SuccessStories successData={successData} />
       <Industries industriesData={industriesData} />
       <LatestTabs PodcastData={PodcastData} everythingData={everythingData} />
-
-      <h1>hii</h1>
     </>
   );
 };
