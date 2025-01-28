@@ -115,15 +115,17 @@ const Parent = (props) => {
                   <h2
                     className={`${
                       header?.href == route.pathname
-                        ? "text-[#ff980b]"
+                        ? ""
                         : props.isScrollNavbar ||
                           props.isHovered ||
                           props.shouldNavbarBlack
-                        ? "text-para"
-                        : "text-white"
+                        ? ""
+                        : "text-[#0D1B2F]"
                     } ${
-                      currentHref === mainMenu ? "text-[#ff980b]" : ""
-                    } nav-item nav-link-ltr my-auto mx-4 text-[1.6rem] font-semibold cursor-pointer transition-all navbar-parent`}
+                      currentHref === mainMenu
+                        ? "text-[#0D1B2F] text-[1.8rem] font-[400]"
+                        : ""
+                    } nav-item nav-link-ltr my-auto mx-4 text-[#0D1B2F] text-[1.8rem] font-semibold cursor-pointer transition-all navbar-parent`}
                   >
                     {header?.label}
                   </h2>
@@ -136,11 +138,13 @@ const Parent = (props) => {
                           : props.isScrollNavbar ||
                             props.isHovered ||
                             props.shouldNavbarBlack
-                          ? "text-para"
+                          ? ""
                           : "text-[#0D1B2F]"
                       } ${
-                        currentHref === mainMenu ? "text-[#ff980b]" : ""
-                      } nav-item nav-link-ltr my-auto mx-4 text-[1.6rem] font-semibold cursor-pointer transition-all navbar-parent`}
+                        currentHref === mainMenu
+                          ? "text-[#0D1B2F]"
+                          : "text-[#0D1B2F]"
+                      } nav-item nav-link-ltr my-auto mx-4 text-[1.6rem] text-[#0D1B2F] font-semibold cursor-pointer transition-all navbar-parent`}
                       href={header?.href}
                       label={header?.label}
                       target={header?.target}

@@ -1,31 +1,32 @@
-// pages/offerings.js
+import Link from "next/link";
 import React from "react";
 
 const OfferingsMenu = ({ offeringData }) => {
   return (
     <div className=" bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Offerings</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {offeringData?.tab.map((tab, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold mb-4">
-              {tab.mainTitle.label} {/* Access the label from mainTitle */}
-            </h2>
-            <ul className="space-y-2">
-              {tab.subTitle.map((sub, subIndex) => (
-                <li key={subIndex}>
-                  <a
-                    href={sub.href}
-                    target={sub.target || "_self"}
-                    className="text-blue-500 hover:underline"
-                  >
-                    {sub.label} {/* Access the label from subTitle */}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="grid grid-cols-3 px-24 py-12 gap-12">
+        {offeringData?.tab &&
+          offeringData?.tab.map((tab, index) => (
+            <div key={index} className="">
+              <h2 className="text-[#0D1B2F] font-[600] text-[2rem] mb-8">
+                {tab?.mainTitle?.label}
+              </h2>
+              <ul className="space-y-8 px-12 py-4 border-l-4 border-[#0D1B2F66] border-opacity-40">
+                {tab?.subTitle &&
+                  tab?.subTitle.map((sub, subIndex) => (
+                    <li key={subIndex}>
+                      <Link
+                        href={sub?.href}
+                        target={sub?.target || "_self"}
+                        className="text-[#0D1B2F] font-[400] text-[1.8rem] hover:underline"
+                      >
+                        {sub?.label}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
       </div>
     </div>
   );

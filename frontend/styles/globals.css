@@ -2190,11 +2190,11 @@ input {
   height: 2.5px;
   content: "";
   position: absolute;
-  background-color: #ff980b;
+  /* background-color: #ff980b; */
 }
-.nav-item:hover {
+/* .nav-item:hover {
   color: #ff980b;
-}
+} */
 .nav-link-ltr::before {
   width: 0%;
   bottom: 10px;
@@ -2321,11 +2321,11 @@ figure[class="image image_resized image-style-block-align-left"] {
   height: 2px;
   content: "";
   position: absolute;
-  background-color: #ff980b;
+  /* background-color: #ff980b; */
 }
-.nav-item:hover {
+/* .nav-item:hover {
   color: #ff980b;
-}
+} */
 .nav-link-ltr::before {
   width: 0%;
   bottom: 10px;

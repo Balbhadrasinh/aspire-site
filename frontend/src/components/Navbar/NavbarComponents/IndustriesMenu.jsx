@@ -2,39 +2,39 @@ import React from "react";
 import Images from "../../Shared/Image";
 
 const IndustriesMenu = ({ industriesData }) => {
-  console.log(industriesData, "data");
   return (
-    <div className="bg-gray-100 p-8 w-[900px] h-[300px]">
-      <h1 className="text-3xl font-bold text-center mb-8">Offerings</h1>
-      <div className="grid grid-cols-2 p-24 gap-4">
-        {industriesData?.tab?.map((second, index) => (
-          <div
-            className="flex items-start gap-2 p-4" // Fixed size and overflow control
-            key={index}
-            onClick={() => {
-              closeOnClick(false);
-            }}
-          >
-            <div className="image">
-              {second?.images?.url && second?.images?.alternativeText && (
-                <Images
-                  src={second?.images?.url}
-                  width={18}
-                  height={18}
-                  alt={second?.images?.alternativeText}
-                />
-              )}
+    <div className="bg-gray-100 -mr-[12rem] w-auto h-auto">
+      <div className="grid grid-cols-2 p-16 gap-12">
+        {industriesData?.tab &&
+          industriesData?.tab?.map((second, index) => (
+            <div
+              className="flex gap-6 w-[350px] h-fit"
+              key={index}
+              onClick={() => {
+                closeOnClick(false);
+              }}
+            >
+              <div className="image w-[48px] flex-shrink-0 flex justify-center text-center items-center h-[48px] bg-[#FF5E3A33] rounded-lg">
+                {second?.images?.url && second?.images?.alternativeText && (
+                  <Images
+                    src={second?.images?.url}
+                    width={24}
+                    height={24}
+                    alt={second?.images?.alternativeText}
+                    className=""
+                  />
+                )}
+              </div>
+              <div className="mt-2 w-full flex flex-col">
+                <p className="sub-heading text-[2rem] text-[#0D1B2F] font-semibold leading-8 2xl:text-[1.6rem]">
+                  {second?.title}
+                </p>
+                <span className="text-[#0D1B2F] font-[400] leading-[2.5rem] mt-6 text-[1.8rem]  break-words whitespace-normal">
+                  {second?.richText}
+                </span>
+              </div>
             </div>
-            <div className="heading flex-1">
-              <p className="sub-heading text-[1.4rem] text-[#525252] font-semibold hover:text-[#ff980b] hover:text-[1.6rem] leading-8 2xl:text-[1.6rem]">
-                {second?.title}
-              </p>
-              <p className="text-[#525252] whitespace-normal text-left overflow-hidden">
-                {second?.richText}
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
