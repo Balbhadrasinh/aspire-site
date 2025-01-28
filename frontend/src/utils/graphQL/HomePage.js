@@ -180,6 +180,32 @@ const HOME_PAGE = gql`
             }
           }
         }
+
+        ... on ComponentSharedEverything {
+          __typename
+          tab {
+            title
+            date
+            description
+            image {
+              url
+              alternativeText
+            }
+          }
+        }
+
+         ... on ComponentSharedPodcasts {
+          __typename
+          tab {
+            title
+            date
+            description
+            image {
+              url
+              alternativeText
+            }
+          }
+        }
         ... on ComponentNewHomeMainHero {
           __typename
           heroText {

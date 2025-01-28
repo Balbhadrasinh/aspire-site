@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_everythings",
+  "info": {
+    "displayName": "Everything",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "tab": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.latest-detail"
+    }
+  }
+}

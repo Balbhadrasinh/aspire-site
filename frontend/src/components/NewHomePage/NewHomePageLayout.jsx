@@ -1,4 +1,5 @@
 import ClientsSection from "./NewHomePageComponents/ClientsSection";
+import LatestTabs from "./NewHomePageComponents/LatestTabs";
 import HeroSection from "./NewHomePageComponents/HeroSection";
 import Industries from "./NewHomePageComponents/Industries";
 import NewHomePageProjectInMind from "./NewHomePageComponents/NewHomePageProjectInMind";
@@ -31,16 +32,25 @@ const NewHomePageLayout = ({ homePageData }) => {
     (section) => section.__typename === "ComponentNewHomeIndustries"
   );
 
+  const everythingData = homePageSectionData.find(
+    (section) => section.__typename === "ComponentSharedEverything"
+  );
+
+  const PodcastData = homePageSectionData.find(
+    (section) => section.__typename === "ComponentSharedPodcasts"
+  );
 
   return (
     <>
       <HeroSection HeroData={HeroData} />
       <ResultDriven resultDriven={ResultDrivenData} />
       <NewHomePageProjectInMind project={projectInMindData} />
-      <ClientsSection clientData={clientData}/>
+      <ClientsSection clientData={clientData} />
       <Offerings offeringsData={offeringsData} />
       <SuccessStories successData={successData} />
-      <Industries industriesData={industriesData}/>
+      <Industries industriesData={industriesData} />
+      <LatestTabs PodcastData={PodcastData} everythingData={everythingData} />
+
       <h1>hii</h1>
     </>
   );

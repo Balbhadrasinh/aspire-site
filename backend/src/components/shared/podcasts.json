@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_podcasts",
+  "info": {
+    "displayName": "Podcasts",
+    "icon": "typhoon"
+  },
+  "options": {},
+  "attributes": {
+    "tab": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.latest-detail"
+    }
+  }
+}
