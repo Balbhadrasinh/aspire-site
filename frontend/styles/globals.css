@@ -2677,11 +2677,10 @@ figure[class="image image_resized image-style-block-align-left"] {
   scroll-behavior: smooth;
 }
 
-/* Custom styles for the Swiper buttons */
-.offerings-swiper-button-next,
+/* .offerings-swiper-button-next,
 .offerings-swiper-button-prev {
-  width: 3rem; /* Adjust size as needed */
-  height: 3rem; /* Adjust size as needed */
+  width: 3rem; 
+  height: 3rem; 
   border-radius: 50%;
   background-color: #868e96;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -2693,15 +2692,15 @@ figure[class="image image_resized image-style-block-align-left"] {
 
 .offerings-swiper-button-next::after,
 .offerings-swiper-button-prev::after {
-  font-family: "swiper-icons"; /* Required for Swiper icons */
-  font-size: 1.5rem; /* Adjust icon size */
-  color: #868e96; /* Icon color */
+  font-family: "swiper-icons"; 
+  font-size: 1.5rem; 
+  color: #868e96; 
 }
 
 .offerings-swiper-button-next:hover,
 .offerings-swiper-button-prev:hover {
-  background-color: #868e96; /* Hover background color */
-}
+  background-color: #868e96; 
+} */
 
 /* Hover effect for cards */
 .group:hover {

@@ -3,7 +3,6 @@ import { useState } from "react";
 import Images from "../../Shared/Image";
 
 const LatestTabs = ({ everythingData, PodcastData }) => {
-
   const [activeTab, setActiveTab] = useState("Everything");
 
   const tabData = {
@@ -33,7 +32,9 @@ const LatestTabs = ({ everythingData, PodcastData }) => {
     <div className="sm:py-40 py-32 px-4 sm:px-12 md:px-0">
       <div className="container mx-auto transition-all duration-500">
         <div className="sm:flex justify-center lblogs-two mb-24">
-          <h2 className="sm:mb-0 mb-8">{"Browse our latest Insights"}</h2>
+          <h2 className="sm:mb-0 text-[#0D1B2F] mb-8">
+            {"Browse our latest Insights"}
+          </h2>
         </div>
         <div className="sm:flex lg:justify-center space-x-4 text-center">
           {[

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import Icon from "../../icons/icon";
 // import Links from "../../Shared/Links";
 
 const NewHomePageProjectInMind = ({ project }) => {
-
   return (
     <div className="bg-[#011D45] py-4 px-4 sm:px-12 md:px-0">
       <div className="container  mx-auto mb-4">
@@ -43,11 +43,14 @@ const NewHomePageProjectInMind = ({ project }) => {
           </div>
           <div>
             <div className="btn-primary bg-[#FF980B] text-white group mt-8 xl:mt-0 md:ml-auto">
-              {/* <Link
+              <Link
                 href={project?.button?.link?.href}
                 label={project?.button?.link?.label}
-              /> */}
-               <label>{project?.button?.link?.label}</label>
+              />
+              <div className="flex text-[1.8rem] gap-4">
+                <p className="">{project?.button?.link?.label}</p>
+                <Icon name="right" size={16} color="#ffffff" />
+              </div>
             </div>
           </div>
         </div>

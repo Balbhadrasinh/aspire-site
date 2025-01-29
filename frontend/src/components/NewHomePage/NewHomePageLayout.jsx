@@ -44,9 +44,9 @@ const NewHomePageLayout = ({ homePageData }) => {
     <>
       <HeroSection HeroData={HeroData} />
       <ResultDriven resultDriven={ResultDrivenData} />
+      <Offerings offeringsData={offeringsData} />
       <NewHomePageProjectInMind project={projectInMindData} />
       <ClientsSection clientData={clientData} />
-      <Offerings offeringsData={offeringsData} />
       <SuccessStories successData={successData} />
       <Industries industriesData={industriesData} />
       <LatestTabs PodcastData={PodcastData} everythingData={everythingData} />

@@ -1,8 +1,9 @@
 import Images from "@/Shared/Image";
 import { useState } from "react";
 import Links from "@/Shared/Links";
-import TopHeading from "../../Shared/TopHeading";
-//import Icon from "../../icons/icon";
+import Icon from "../../icons/icon";
+import Image from "next/image";
+import ArrowUp from "../../../../public/images/arrow-up-right.png";
 
 const ResultDriven = ({ resultDriven }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -19,12 +20,11 @@ const ResultDriven = ({ resultDriven }) => {
   };
 
   return (
-    <div className="sm:py-40 py-32 px-4 sm:px-12 md:px-0 bg-[#868e96]">
+    <div className="sm:py-40 py-32 px-4 sm:px-12 md:px-0">
       <div className="container mx-auto">
-        <TopHeading
-          title={resultDriven?.title}
-          heading={resultDriven?.description}
-        />
+        <h2 className="font-bold text-center mb-24 text-[#0D1B2F]">
+          {resultDriven?.description}
+        </h2>
         <div className="lg:grid hidden grid-cols-12 gap-20">
           <div className="flex col-span-4 z-10 rounded-2xl bg-[#0D1B2F]">
             <ul className="md:block mt-8 w-full">
@@ -101,14 +101,19 @@ const ResultDriven = ({ resultDriven }) => {
                             );
                           })}
 
-                        <div className="mt-20 flex items-center gap-4">
+                        <div className="mt-20 flex items-center gap-2">
                           <Links
                             href={content?.linkTag?.href}
                             label={content?.linkTag?.label}
-                            className="text-[1.6rem] text-para font-bold"
+                            className="text-[1.8rem] text-[#0D1B2F] font-bold"
                           />
-                          <div className="mt-1">
-                            {/* <Icon name="arrowRight" size={20} color="#525252" /> */}
+                          <div className="">
+                            <Image  
+                              src={ArrowUp}
+                              width={16}
+                              height={16}
+                              alt={"arrow-icon"}
+                            />
                           </div>
                         </div>
                       </div>
@@ -204,7 +209,7 @@ const ResultDriven = ({ resultDriven }) => {
                             className="text-[1.6rem] text-para font-bold"
                           />
                           <div className="mt-1">
-                            {/* <Icon name="arrowRight" size={16} color="#525252" /> */}
+                            <Icon name="arrowRight" size={16} color="#525252" />
                           </div>
                         </div>
                       </div>

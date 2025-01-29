@@ -71,13 +71,13 @@ const HeroSection = ({ HeroData }) => {
         </div>
         <div className="absolute bottom-0 w-full">
           {/* Container for partners section */}
-          <div className="container mx-auto flex gap-8 mb-[3%]">
+          <div className="container mx-auto flex gap-24 mb-[3%]">
             {HeroData?.partnersTitle && (
-              <p className=" text-[#FF5E3A] text-[2rem] font-[600]">
+              <p className=" text-[#FF5E3A] text-[2.2rem] font-[600]">
                 {HeroData?.partnersTitle}
               </p>
             )}
-            <div className="flex gap-12 items-center">
+            <div className="flex gap-16 items-center">
               {HeroData?.partners != undefined &&
                 HeroData?.partners.length > 0 &&
                 HeroData?.partners.map((images, index) => {
@@ -85,8 +85,8 @@ const HeroSection = ({ HeroData }) => {
                     <div key={index} className="text-center">
                       <Images
                         src={images?.image?.url}
-                        height={60}
-                        width={60}
+                        height={90}
+                        width={90}
                         alt={images?.image?.alternativeText}
                       />
                     </div>

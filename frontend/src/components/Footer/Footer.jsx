@@ -43,7 +43,7 @@ const Footer = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <div className="">
+    <div className="sm:py-40 py-32">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="font-[600] text-[2.4rem] mb-4">

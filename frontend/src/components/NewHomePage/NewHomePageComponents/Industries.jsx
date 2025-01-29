@@ -3,24 +3,32 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Images from "../../Shared/Image";
+import Icon from "../../icons/icon";
+import Image from "next/image";
 
 const Industries = ({ industriesData }) => {
   return (
-    <div className="mx-auto rounded-xl relative w-full">
-      <div className="container pt-24 relative mx-auto">
+    <div className="mx-auto rounded-xl sm:py-40 py-32 relative w-full">
+      <div className="container relative mx-auto">
         <div className="flex justify-between items-center mb-16">
-          <h2 className="heading-two font-[600]">{industriesData?.title}</h2>
+          <h2 className="heading-two text-[#0D1B2F] font-[600]">
+            {industriesData?.title}
+          </h2>
           <div className="flex gap-4">
-            <div className="offerings-swiper-button-prev"></div>
-            <div className="offerings-swiper-button-next"></div>
+            <button className="industries-swiper-button-prev p-4 border border-[#0D1B2F] rounded-full hover:bg-gray-100 transition-all">
+              <Icon name="left" size={16} color="#0D1B2F" />
+            </button>
+            <button className="industries-swiper-button-next p-4 border border-[#0D1B2F] rounded-full hover:bg-gray-100 transition-all">
+              <Icon name="right" size={16} color="#0D1B2F" />
+            </button>
           </div>
         </div>
         <Swiper
           modules={[Navigation]}
           loop={true}
           navigation={{
-            nextEl: ".offerings-swiper-button-next",
-            prevEl: ".offerings-swiper-button-prev",
+            nextEl: ".industries-swiper-button-next",
+            prevEl: ".industries-swiper-button-prev",
           }}
           breakpoints={{
             300: { slidesPerView: 1 },
@@ -34,6 +42,13 @@ const Industries = ({ industriesData }) => {
             industriesData?.tabs?.map((tabData, index) => (
               <SwiperSlide key={index}>
                 <div className="group px-12 py-12 shadow-lg rounded-lg p-6 mx-4 h-full flex flex-col cursor-pointer transition-all relative overflow-hidden">
+                  {/* <Images
+                    src={tabData?.imgIcon?.url}
+                    alt={tabData?.imgIcon?.alternativeText}
+                    height={20}
+                    width={20}
+                    className="transition-all"
+                  /> */}
                   <p className="text-[3rem] leading-[3.5rem] font-[500] text-[#0D1B2F] group-hover:text-white mb-16 z-10">
                     {tabData?.tabTitle}
                   </p>

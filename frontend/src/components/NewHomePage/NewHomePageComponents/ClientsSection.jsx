@@ -3,9 +3,9 @@ import React from "react";
 
 const ClientsSection = ({ clientData }) => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-100 sm:py-40 py-32">
       <div className="container w-[80%] mx-auto px-4">
-        <h2 className="font-bold text-center mb-8">{clientData?.title}</h2>
+        <h2 className="font-bold text-center text-[#0D1B2F] mb-8">{clientData?.title}</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {clientData?.firstImageRow?.map((client) => (
             <div
