@@ -162,6 +162,10 @@ const HOME_PAGE = gql`
             heading
             midDesc
             shortDesc
+            imgIconHover {
+              url
+              alternativeText
+            }
             imgIcon {
               url
               alternativeText
@@ -194,7 +198,7 @@ const HOME_PAGE = gql`
           }
         }
 
-         ... on ComponentSharedPodcasts {
+        ... on ComponentSharedPodcasts {
           __typename
           tab {
             title

@@ -30,25 +30,39 @@ const Industries = ({ industriesData }) => {
             nextEl: ".industries-swiper-button-next",
             prevEl: ".industries-swiper-button-prev",
           }}
+          slidesPerView={3.5}
+          slidesPerGroup={1}
           breakpoints={{
             300: { slidesPerView: 1 },
             540: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 },
+            1200: { slidesPerView: 3.5 },
           }}
           className="relative"
         >
           {industriesData?.tabs &&
             industriesData?.tabs?.map((tabData, index) => (
               <SwiperSlide key={index}>
-                <div className="group px-12 py-12 shadow-lg rounded-lg p-6 mx-4 h-full flex flex-col cursor-pointer transition-all relative overflow-hidden">
-                  {/* <Images
-                    src={tabData?.imgIcon?.url}
-                    alt={tabData?.imgIcon?.alternativeText}
-                    height={20}
-                    width={20}
-                    className="transition-all"
-                  /> */}
+                <div className="group px-12 py-12 border-l broder-1px border-[#525252] p-6 mx-4 h-full flex flex-col cursor-pointer transition-all relative overflow-hidden">
+                  <div className="relative w-24 h-24 mb-12 group">
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#FD644F29] rounded-xl transition-opacity duration-300 group-hover:opacity-0">
+                      <Images
+                        src={tabData?.imgIcon?.url}
+                        alt={tabData?.imgIcon?.alternativeText}
+                        height={30}
+                        width={30}
+                      />
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#FFFFFF3D] rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <Images
+                        src={tabData?.imgIconHover?.url} // Add the hover icon URL
+                        alt={tabData?.imgIcon?.alternativeText}
+                        height={30} // Keep the same size as the default image
+                        width={30}
+                      />
+                    </div>
+                  </div>
+
                   <p className="text-[3rem] leading-[3.5rem] font-[500] text-[#0D1B2F] group-hover:text-white mb-16 z-10">
                     {tabData?.tabTitle}
                   </p>
