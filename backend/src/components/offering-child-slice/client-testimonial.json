@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_offering_child_slice_client_testimonials",
+  "info": {
+    "displayName": "ClientTestimonial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "text"
+    },
+    "caseBtn": {
+      "type": "string"
+    },
+    "caseDescription": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "clientProfile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "client-story.client-story"
+    }
+  }
+}

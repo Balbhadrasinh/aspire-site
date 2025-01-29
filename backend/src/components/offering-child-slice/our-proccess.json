@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_offering_child_slice_our_proccesses",
+  "info": {
+    "displayName": "OurProccess",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "ProcessDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.img-title-desc"
+    }
+  }
+}

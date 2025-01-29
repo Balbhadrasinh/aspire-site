@@ -165,6 +165,140 @@ export interface AboutSlicesWhatWeDo extends Struct.ComponentSchema {
   };
 }
 
+export interface ClientStoryClientStory extends Struct.ComponentSchema {
+  collectionName: 'components_client_story_client_stories';
+  info: {
+    displayName: 'ClientStory';
+  };
+  attributes: {
+    clientDesignation: Schema.Attribute.String;
+    clientName: Schema.Attribute.String;
+    clientPic: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    story: Schema.Attribute.RichText;
+  };
+}
+
+export interface FooterAbout extends Struct.ComponentSchema {
+  collectionName: 'components_footer_abouts';
+  info: {
+    displayName: 'about';
+    icon: 'tablets';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    shortAbout: Schema.Attribute.Text;
+    socialLinks: Schema.Attribute.Component<'shared.icon-img-link', true>;
+  };
+}
+
+export interface FooterCareerOp extends Struct.ComponentSchema {
+  collectionName: 'components_footer_career_ops';
+  info: {
+    displayName: 'careerOp';
+    icon: 'battery-empty';
+  };
+  attributes: {
+    careerOp: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'shared.icon-link', true>;
+  };
+}
+
+export interface FooterCareerOpportunity extends Struct.ComponentSchema {
+  collectionName: 'components_footer_career_opportunities';
+  info: {
+    displayName: 'careerOpportunity';
+    icon: 'blind';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'shared.button', false>;
+    contactUs: Schema.Attribute.JSON;
+    is_visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterCareers extends Struct.ComponentSchema {
+  collectionName: 'components_footer_careers';
+  info: {
+    displayName: 'Careers';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterDiscover extends Struct.ComponentSchema {
+  collectionName: 'components_footer_discovers';
+  info: {
+    displayName: 'Discover';
+    icon: 'star';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterFooterService extends Struct.ComponentSchema {
+  collectionName: 'components_footer_footer_services';
+  info: {
+    displayName: 'footerService';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterLocation extends Struct.ComponentSchema {
+  collectionName: 'components_footer_locations';
+  info: {
+    displayName: 'Location';
+    icon: 'stack';
+  };
+  attributes: {
+    is_visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    locations: Schema.Attribute.Component<'shared.title-text-link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterQuickLinks extends Struct.ComponentSchema {
+  collectionName: 'components_footer_quick_links';
+  info: {
+    displayName: 'quickLinks';
+    icon: 'external-link-alt';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterResources extends Struct.ComponentSchema {
+  collectionName: 'components_footer_resources';
+  info: {
+    displayName: 'Resources';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface FooterStartConvo extends Struct.ComponentSchema {
+  collectionName: 'components_footer_start_convos';
+  info: {
+    displayName: 'startConvo';
+    icon: 'glass-cheers';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'shared.icon-link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomePageSlicesWeSimplifySoftware
   extends Struct.ComponentSchema {
   collectionName: 'components_home_page_slices_we_simplify_softwares';
@@ -200,6 +334,40 @@ export interface HomePageSlicesYourIdeasOurSolutions
   };
 }
 
+export interface MegaMenuSlicesCompany extends Struct.ComponentSchema {
+  collectionName: 'components_mega_menu_slices_companies';
+  info: {
+    displayName: 'Company';
+  };
+  attributes: {
+    tab: Schema.Attribute.Component<'shared.img-detail-button', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MegaMenuSlicesIndustries extends Struct.ComponentSchema {
+  collectionName: 'components_mega_menu_slices_industries';
+  info: {
+    displayName: 'Industries';
+  };
+  attributes: {
+    tab: Schema.Attribute.Component<'shared.img-detail-button', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MegaMenuSlicesOfferings extends Struct.ComponentSchema {
+  collectionName: 'components_mega_menu_slices_offerings';
+  info: {
+    displayName: 'Offerings';
+    icon: 'manyToMany';
+  };
+  attributes: {
+    tab: Schema.Attribute.Component<'shared.offering-links', true>;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface MegaMenuSlicesProducts extends Struct.ComponentSchema {
   collectionName: 'components_mega_menu_slices_products';
   info: {
@@ -211,6 +379,18 @@ export interface MegaMenuSlicesProducts extends Struct.ComponentSchema {
     secondSection: Schema.Attribute.Component<'shared.nav-links', true>;
     themeColor: Schema.Attribute.String;
     thirdSection: Schema.Attribute.Component<'shared.image', false>;
+  };
+}
+
+export interface MegaMenuSlicesResources extends Struct.ComponentSchema {
+  collectionName: 'components_mega_menu_slices_resources';
+  info: {
+    displayName: 'Resources';
+    icon: 'emotionHappy';
+  };
+  attributes: {
+    tab: Schema.Attribute.Component<'shared.img-detail-button', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -294,6 +474,19 @@ export interface MegaMenuSlicesWhoWeWork extends Struct.ComponentSchema {
   };
 }
 
+export interface NewHomeIndustries extends Struct.ComponentSchema {
+  collectionName: 'components_new_home_industries';
+  info: {
+    displayName: 'Industries';
+    icon: 'earth';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    tabs: Schema.Attribute.Component<'shared.tabs-paras-imgs', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface NewHomeMainHero extends Struct.ComponentSchema {
   collectionName: 'components_new_home_main_heroes';
   info: {
@@ -314,10 +507,29 @@ export interface NewHomeNewHomeHero extends Struct.ComponentSchema {
     icon: 'address-book';
   };
   attributes: {
+    button: Schema.Attribute.Component<'shared.button', true>;
     heroImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    heroText: Schema.Attribute.Component<'shared.title-rich-button', true>;
-    logoImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    logoTitle: Schema.Attribute.String;
+    mobileImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    partners: Schema.Attribute.Component<'shared.img-title-link', true>;
+    partnersTitle: Schema.Attribute.String;
+    richText: Schema.Attribute.Text;
+    Rightside: Schema.Attribute.Boolean;
+    title: Schema.Attribute.String;
+    yearsField: Schema.Attribute.Component<'shared.years-in-the-field', false>;
+  };
+}
+
+export interface NewHomeOfferings extends Struct.ComponentSchema {
+  collectionName: 'components_new_home_offerings';
+  info: {
+    displayName: 'Offerings';
+    icon: 'store';
+  };
+  attributes: {
+    tab: Schema.Attribute.Component<'shared.offering-links', true>;
+    Title: Schema.Attribute.String;
   };
 }
 
@@ -364,6 +576,19 @@ export interface NewHomeResultsDriven extends Struct.ComponentSchema {
   info: {
     displayName: 'resultsDriven';
     icon: 'newspaper';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    tabs: Schema.Attribute.Component<'shared.tabs-paras-imgs', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface NewHomeSuccessStories extends Struct.ComponentSchema {
+  collectionName: 'components_new_home_success_stories';
+  info: {
+    displayName: 'SuccessStories';
+    icon: 'emotionUnhappy';
   };
   attributes: {
     description: Schema.Attribute.String;
@@ -423,6 +648,118 @@ export interface NewHomeWhyChooseAspire extends Struct.ComponentSchema {
     cards: Schema.Attribute.Component<'shared.tab-title', true>;
     description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface OfferingChildSliceAspireEdge extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_aspire_edges';
+  info: {
+    displayName: 'AspireEdge';
+  };
+  attributes: {
+    AspireEdgeCards: Schema.Attribute.Component<
+      'shared.aspire-edge-card',
+      true
+    >;
+    description: Schema.Attribute.Text;
+    Heading: Schema.Attribute.Text;
+  };
+}
+
+export interface OfferingChildSliceClientTestimonial
+  extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_client_testimonials';
+  info: {
+    description: '';
+    displayName: 'ClientTestimonial';
+  };
+  attributes: {
+    caseBtn: Schema.Attribute.String;
+    caseDescription: Schema.Attribute.Text;
+    clientProfile: Schema.Attribute.Component<
+      'client-story.client-story',
+      true
+    >;
+    Heading: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'shared.link', false>;
+  };
+}
+
+export interface OfferingChildSliceHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_hero_sections';
+  info: {
+    description: '';
+    displayName: 'HeroSection';
+  };
+  attributes: {
+    Heading: Schema.Attribute.String;
+    HeroSection: Schema.Attribute.Component<'new-home.new-home-hero', false>;
+  };
+}
+
+export interface OfferingChildSliceKeyOfferning extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_key_offernings';
+  info: {
+    displayName: 'KeyOfferning';
+  };
+  attributes: {
+    AspireEdgeCards: Schema.Attribute.Component<
+      'shared.aspire-edge-card',
+      true
+    >;
+    Heading: Schema.Attribute.String;
+  };
+}
+
+export interface OfferingChildSliceOurProccess extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_our_proccesses';
+  info: {
+    description: '';
+    displayName: 'OurProccess';
+  };
+  attributes: {
+    Heading: Schema.Attribute.String;
+    ProcessDetails: Schema.Attribute.Component<'shared.img-title-desc', true>;
+  };
+}
+
+export interface OfferingChildSliceOverview extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_overviews';
+  info: {
+    description: '';
+    displayName: 'Overview';
+  };
+  attributes: {
+    Description: Schema.Attribute.Text;
+    Heading: Schema.Attribute.String;
+  };
+}
+
+export interface OfferingChildSliceTechnologies extends Struct.ComponentSchema {
+  collectionName: 'components_offering_child_slice_technologies';
+  info: {
+    displayName: 'Technologies';
+  };
+  attributes: {
+    AspireEdgeCards: Schema.Attribute.Component<
+      'shared.aspire-edge-card',
+      true
+    >;
+    Heading: Schema.Attribute.String;
+  };
+}
+
+export interface SharedAspireEdgeCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_aspire_edge_cards';
+  info: {
+    displayName: 'AspireEdgeCard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    Heading: Schema.Attribute.Text;
+    icons: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'shared.link', false>;
   };
 }
 
@@ -1069,6 +1406,22 @@ export interface SharedNumEmailAddress extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedOfferingLinks extends Struct.ComponentSchema {
+  collectionName: 'components_shared_offering_links';
+  info: {
+    displayName: 'offering-links';
+    icon: 'file';
+  };
+  attributes: {
+    bgImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    headingOne: Schema.Attribute.RichText;
+    headingTwo: Schema.Attribute.RichText;
+    mainTitle: Schema.Attribute.Component<'shared.link', false>;
+    subTitle: Schema.Attribute.Component<'shared.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedOnlyImageRepeatable extends Struct.ComponentSchema {
   collectionName: 'components_shared_only_image_repeatables';
   info: {
@@ -1126,6 +1479,20 @@ export interface SharedOnlyTitleRepeatable extends Struct.ComponentSchema {
   };
   attributes: {
     iconClass: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedOurClients extends Struct.ComponentSchema {
+  collectionName: 'components_shared_our_clients';
+  info: {
+    displayName: 'ourClients';
+    icon: 'eye';
+  };
+  attributes: {
+    firstImageRow: Schema.Attribute.Component<'shared.image', true>;
+    heading: Schema.Attribute.Text;
+    is_visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     title: Schema.Attribute.String;
   };
 }
@@ -1360,6 +1727,7 @@ export interface SharedTabsParasImgs extends Struct.ComponentSchema {
     iconClass: Schema.Attribute.String;
     imgIcon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     insideImg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    keywords: Schema.Attribute.Component<'shared.link', true>;
     linkTag: Schema.Attribute.Component<'shared.link', false>;
     midDesc: Schema.Attribute.Text;
     shortDesc: Schema.Attribute.Text;
@@ -1649,6 +2017,18 @@ export interface SharedTwoTitleReapeatable extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedYearsInTheField extends Struct.ComponentSchema {
+  collectionName: 'components_shared_years_in_the_fields';
+  info: {
+    displayName: 'yearsInTheField';
+    icon: 'doctor';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'shared.two-title-reapeatable', true>;
+    is_visible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -1662,23 +2042,49 @@ declare module '@strapi/strapi' {
       'about-slices.our-leader': AboutSlicesOurLeader;
       'about-slices.partn-us': AboutSlicesPartnUs;
       'about-slices.what-we-do': AboutSlicesWhatWeDo;
+      'client-story.client-story': ClientStoryClientStory;
+      'footer.about': FooterAbout;
+      'footer.career-op': FooterCareerOp;
+      'footer.career-opportunity': FooterCareerOpportunity;
+      'footer.careers': FooterCareers;
+      'footer.discover': FooterDiscover;
+      'footer.footer-service': FooterFooterService;
+      'footer.location': FooterLocation;
+      'footer.quick-links': FooterQuickLinks;
+      'footer.resources': FooterResources;
+      'footer.start-convo': FooterStartConvo;
       'home-page-slices.we-simplify-software': HomePageSlicesWeSimplifySoftware;
       'home-page-slices.your-ideas-our-solutions': HomePageSlicesYourIdeasOurSolutions;
+      'mega-menu-slices.company': MegaMenuSlicesCompany;
+      'mega-menu-slices.industries': MegaMenuSlicesIndustries;
+      'mega-menu-slices.offerings': MegaMenuSlicesOfferings;
       'mega-menu-slices.products': MegaMenuSlicesProducts;
+      'mega-menu-slices.resources': MegaMenuSlicesResources;
       'mega-menu-slices.section2-who-we': MegaMenuSlicesSection2WhoWe;
       'mega-menu-slices.technologies': MegaMenuSlicesTechnologies;
       'mega-menu-slices.what-we-do': MegaMenuSlicesWhatWeDo;
       'mega-menu-slices.who-we-are': MegaMenuSlicesWhoWeAre;
       'mega-menu-slices.who-we-work': MegaMenuSlicesWhoWeWork;
+      'new-home.industries': NewHomeIndustries;
       'new-home.main-hero': NewHomeMainHero;
       'new-home.new-home-hero': NewHomeNewHomeHero;
+      'new-home.offerings': NewHomeOfferings;
       'new-home.projectin-mind': NewHomeProjectinMind;
       'new-home.reach-out': NewHomeReachOut;
       'new-home.results-driven': NewHomeResultsDriven;
+      'new-home.success-stories': NewHomeSuccessStories;
       'new-home.trusted-by-hundreds': NewHomeTrustedByHundreds;
       'new-home.what-we-offer': NewHomeWhatWeOffer;
       'new-home.who-we-work': NewHomeWhoWeWork;
       'new-home.why-choose-aspire': NewHomeWhyChooseAspire;
+      'offering-child-slice.aspire-edge': OfferingChildSliceAspireEdge;
+      'offering-child-slice.client-testimonial': OfferingChildSliceClientTestimonial;
+      'offering-child-slice.hero-section': OfferingChildSliceHeroSection;
+      'offering-child-slice.key-offerning': OfferingChildSliceKeyOfferning;
+      'offering-child-slice.our-proccess': OfferingChildSliceOurProccess;
+      'offering-child-slice.overview': OfferingChildSliceOverview;
+      'offering-child-slice.technologies': OfferingChildSliceTechnologies;
+      'shared.aspire-edge-card': SharedAspireEdgeCard;
       'shared.button': SharedButton;
       'shared.button-cards-num': SharedButtonCardsNum;
       'shared.card-with-title-and-points': SharedCardWithTitleAndPoints;
@@ -1724,11 +2130,13 @@ declare module '@strapi/strapi' {
       'shared.nav-links': SharedNavLinks;
       'shared.navbar-common': SharedNavbarCommon;
       'shared.num-email-address': SharedNumEmailAddress;
+      'shared.offering-links': SharedOfferingLinks;
       'shared.only-image-repeatable': SharedOnlyImageRepeatable;
       'shared.only-rich': SharedOnlyRich;
       'shared.only-title': SharedOnlyTitle;
       'shared.only-title-img-rich': SharedOnlyTitleImgRich;
       'shared.only-title-repeatable': SharedOnlyTitleRepeatable;
+      'shared.our-clients': SharedOurClients;
       'shared.our-partners': SharedOurPartners;
       'shared.our-prod-tabs': SharedOurProdTabs;
       'shared.points': SharedPoints;
@@ -1765,6 +2173,7 @@ declare module '@strapi/strapi' {
       'shared.two-title-cards': SharedTwoTitleCards;
       'shared.two-title-img': SharedTwoTitleImg;
       'shared.two-title-reapeatable': SharedTwoTitleReapeatable;
+      'shared.years-in-the-field': SharedYearsInTheField;
     }
   }
 }

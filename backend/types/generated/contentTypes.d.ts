@@ -510,6 +510,43 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiFooterFooter extends Struct.SingleTypeSchema {
+  collectionName: 'footers';
+  info: {
+    description: '';
+    displayName: 'footer';
+    pluralName: 'footers';
+    singularName: 'footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer: Schema.Attribute.DynamicZone<
+      [
+        'footer.about',
+        'footer.careers',
+        'footer.discover',
+        'footer.resources',
+        'footer.location',
+      ]
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer.footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -560,16 +597,13 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     landingPage: Schema.Attribute.DynamicZone<
       [
         'new-home.new-home-hero',
-        'new-home.reach-out',
         'new-home.results-driven',
-        'new-home.trusted-by-hundreds',
-        'new-home.what-we-offer',
-        'new-home.who-we-work',
-        'new-home.why-choose-aspire',
+        'new-home.offerings',
         'new-home.projectin-mind',
-        'shared.seo',
+        'new-home.success-stories',
+        'new-home.industries',
+        'shared.our-clients',
         'new-home.main-hero',
-        'shared.our-partners',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -578,6 +612,84 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'api::homepage.homepage'
     > &
       Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMegaMenuMegaMenu extends Struct.SingleTypeSchema {
+  collectionName: 'mega_menus';
+  info: {
+    description: '';
+    displayName: 'megaMenu';
+    pluralName: 'mega-menus';
+    singularName: 'mega-menu';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mega-menu.mega-menu'
+    > &
+      Schema.Attribute.Private;
+    menus: Schema.Attribute.DynamicZone<
+      [
+        'mega-menu-slices.offerings',
+        'mega-menu-slices.industries',
+        'mega-menu-slices.company',
+        'mega-menu-slices.resources',
+      ]
+    >;
+    ParentLinks: Schema.Attribute.Component<'shared.link', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiOfferningChildPageOfferningChildPage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'offerning_child_pages';
+  info: {
+    description: '';
+    displayName: 'OfferningChildPage';
+    pluralName: 'offerning-child-pages';
+    singularName: 'offerning-child-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::offerning-child-page.offerning-child-page'
+    > &
+      Schema.Attribute.Private;
+    offeringChild: Schema.Attribute.DynamicZone<
+      [
+        'offering-child-slice.technologies',
+        'offering-child-slice.overview',
+        'offering-child-slice.our-proccess',
+        'offering-child-slice.key-offerning',
+        'offering-child-slice.hero-section',
+        'offering-child-slice.client-testimonial',
+        'offering-child-slice.aspire-edge',
+      ]
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1098,8 +1210,11 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::mega-menu.mega-menu': ApiMegaMenuMegaMenu;
+      'api::offerning-child-page.offerning-child-page': ApiOfferningChildPageOfferningChildPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_offering_child_slice_overviews",
+  "info": {
+    "displayName": "Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

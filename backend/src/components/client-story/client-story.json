@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_client_story_client_stories",
+  "info": {
+    "displayName": "ClientStory"
+  },
+  "options": {},
+  "attributes": {
+   "story": {
+      "type": "richtext"
+    },
+    "clientPic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "clientDesignation": {
+      "type": "string"
+    }
+  }
+}

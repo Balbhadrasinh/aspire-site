@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_offering_child_slice_technologies",
+  "info": {
+    "displayName": "Technologies"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "AspireEdgeCards": {
+      "displayName": "AspireEdgeCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.aspire-edge-card"
+    }
+  }
+}

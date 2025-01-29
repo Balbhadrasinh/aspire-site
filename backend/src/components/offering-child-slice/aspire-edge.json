@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_offering_child_slice_aspire_edges",
+  "info": {
+    "displayName": "AspireEdge"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "AspireEdgeCards": {
+      "displayName": "AspireEdgeCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.aspire-edge-card"
+    }
+  }
+}

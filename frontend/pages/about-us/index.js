@@ -1,27 +1,39 @@
-import React from 'react'
+import React from 'react';
 import { getData } from '../../src/services/FetchData';
-import { ABOUT_PAGE } from '../../src/utils/graphQL/AboutPage';
-import AboutLayout from '@/src/components/About/AboutLayout'
+import { OFFERING_QUERY } from '../../src/utils/graphQL/OfferingChildPage';
+import HeroSection from '@/src/components/Offering/OfferingChild/HeroSection';
+import OfferingLayout from '@/src/components/Offering/OfferingChild/offeringChildLayout';
 
-const About = (props) => {
+const Offering = (props) => {
   return (
     <div>
-      <AboutLayout
-        aboutSectionData={props.aboutSections}
-      />
+      {/* Pass the heroSectionData to the HeroSection component */}
+      <HeroSection offerningPageData={props.heroSectionData} />
+      {/* Pass the other sections to the OfferingLayout component */}
+      <OfferingLayout offeringPageData={props.otherSections} />
     </div>
-  )
-}
+  );
+};
 
-export async function getStaticProps({ req }) {
-  const aboutSections = await getData(ABOUT_PAGE, true);
+export async function getStaticProps() {
+  const offeringData = await getData(OFFERING_QUERY, true);
+
+  // Extract the Hero Section data and other sections
+  const heroSectionData = offeringData?.data?.offeringChildPage?.offeringChild?.find(
+    (item) => item.__typename === "ComponentOfferingChildSliceHeroSection"
+  )?.HeroSection;
+
+  const otherSections = offeringData?.data?.offeringChildPage?.offeringChild?.filter(
+    (item) => item.__typename !== "ComponentOfferingChildSliceHeroSection"
+  );
+
   return {
     props: {
-      aboutSections: aboutSections?.data?.about,
+      heroSectionData, // Hero Section Data
+      otherSections,   // Other Sections Data
     },
     revalidate: 60,
   };
 }
 
-
-export default About
+export default Offering;

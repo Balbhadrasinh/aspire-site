@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offerning_child_pages",
+  "info": {
+    "singularName": "offerning-child-page",
+    "pluralName": "offerning-child-pages",
+    "displayName": "OfferningChildPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "offeringChild": {
+      "type": "dynamiczone",
+      "components": [
+        "offering-child-slice.technologies",
+        "offering-child-slice.overview",
+        "offering-child-slice.our-proccess",
+        "offering-child-slice.key-offerning",
+        "offering-child-slice.hero-section",
+        "offering-child-slice.client-testimonial",
+        "offering-child-slice.aspire-edge"
+      ]
+    }
+  }
+}

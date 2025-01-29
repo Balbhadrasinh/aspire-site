@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_offering_child_slice_hero_sections",
+  "info": {
+    "displayName": "HeroSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "new-home.new-home-hero"
+    }
+  }
+}

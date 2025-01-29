@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_aspire_edge_cards",
+  "info": {
+    "displayName": "AspireEdgeCard"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icons": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

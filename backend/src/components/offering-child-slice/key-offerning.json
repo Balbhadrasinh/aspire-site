@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_offering_child_slice_key_offernings",
+  "info": {
+    "displayName": "KeyOfferning"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "AspireEdgeCards": {
+      "displayName": "AspireEdgeCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.aspire-edge-card"
+    }
+  }
+}

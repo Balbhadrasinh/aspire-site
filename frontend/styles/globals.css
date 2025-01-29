@@ -2705,6 +2705,6 @@ figure[class="image image_resized image-style-block-align-left"] {
 
 /* Hover effect for cards */
 .group:hover {
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: translateY(-2px); /* Slight lift effect */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); Enhanced shadow */
 }
