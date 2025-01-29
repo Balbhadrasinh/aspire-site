@@ -4,21 +4,29 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Images from "../../Shared/Image";
 import Links from "../../Shared/Links";
+import Icon from "../../icons/icon";
 
 const SuccessStories = ({ successData }) => {
   return (
-    <div className="mx-auto rounded-xl relative w-full">
-      <div className="container pt-24 relative mx-auto">
+    <div className="mx-auto sm:py-40 py-32 rounded-xl relative w-full">
+      <div className="container relative mx-auto">
         <div className="flex justify-between items-center mb-16">
-          <h2 className="heading-two font-[600]">{successData?.title}</h2>
+          <h2 className="heading-two text-[#0D1B2F] font-[600]">
+            {successData?.title}
+          </h2>
           <div className="flex gap-4">
-            <div className="success-swiper-button-prev"></div>
-            <div className="success-swiper-button-next"></div>
+            <button className="success-swiper-button-prev p-4 border border-[#0D1B2F] rounded-full hover:bg-gray-100 transition-all">
+              <Icon name="left" size={16} color="#0D1B2F" />
+            </button>
+            <button className="success-swiper-button-next p-4 border border-[#0D1B2F] rounded-full hover:bg-gray-100 transition-all">
+              <Icon name="right" size={16} color="#0D1B2F" />
+            </button>
           </div>
         </div>
         <Swiper
           modules={[Navigation]}
           loop={true}
+          speed={1000}
           navigation={{
             nextEl: ".success-swiper-button-next",
             prevEl: ".success-swiper-button-prev",
@@ -42,7 +50,7 @@ const SuccessStories = ({ successData }) => {
                         <h3 className="text-[3rem] text-[#0D1B2F] font-[500] leading-[3rem]">
                           {content?.tabTitle}
                         </h3>
-                        <h2 className="heading-two mt-8 mb-12 font-[600]">
+                        <h2 className="heading-two text-[#0D1B2F] mt-8 mb-12 font-[600]">
                           {content?.heading}
                         </h2>
                         {content?.keywords != undefined &&
@@ -68,14 +76,14 @@ const SuccessStories = ({ successData }) => {
                         <p className=" text-[#0D1B2FCC] w-[90%] mt-24 mb-8 font-[400] text-[2rem] font-medium leading-[2.5rem]">
                           {content?.midDesc}
                         </p>
-                        <div className="mt-12 flex items-center gap-4">
+                        <div className="mt-12 w-fit btn-primary items-center gap-4">
                           <Links
                             href={content?.linkTag?.href}
                             label={content?.linkTag?.label}
-                            className="text-[1.6rem] btn-primary font-bold"
+                            className="text-[1.6rem] font-bold"
                           />
-                          <div className="mt-1">
-                            {/* <Icon name="arrowRight" size={20} color="#525252" /> */}
+                          <div className="">
+                            <Icon name="right" size={16} color="#ffffff" />
                           </div>
                         </div>
                       </div>
