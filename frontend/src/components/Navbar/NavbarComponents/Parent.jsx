@@ -77,28 +77,23 @@ const Parent = (props) => {
             <div
               key={header.id}
               onClick={() => {
-                setToggleMegaMenu(
-                  header?.label != "offering" &&
-                    header?.label != "industries" &&
-                    header?.label != "company" &&
-                    header?.label != "resources" &&
-                    header?.label != "Contact Us"
-                    ? ""
-                    : header?.label !== toggleLink
-                    ? true
-                    : !toggleMegaMenu
-                );
-                setToggleLink(header?.label);
+                const isSameMenu = header?.label === toggleLink;
+
+                if (isSameMenu) {
+                  setToggleMegaMenu(!toggleMegaMenu);
+                } else {
+                  setToggleMegaMenu(true);
+                  setToggleLink(header?.label);
+                }
+
                 props.setHover(
-                  header?.label != "offerings" &&
-                    header?.label != "industries" &&
-                    header?.label != "company" &&
-                    header?.label != "resources" &&
-                    header?.label != "Contact Us"
+                  header?.label !== "offerings" &&
+                    header?.label !== "industries" &&
+                    header?.label !== "company" &&
+                    header?.label !== "resources" &&
+                    header?.label !== "Contact Us"
                     ? false
-                    : header?.label !== toggleLink
-                    ? true
-                    : !props.isHovered
+                    : true
                 );
               }}
               onMouseLeave={() => {
