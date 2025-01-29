@@ -63,7 +63,7 @@ const MainChildSection = ({ offerningPageData }) => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex overflow-x-hidden mx-auto">
       {/* Sidebar */}
       <div
         className={`w-1/4 hidden lg:block transition-colors duration-500 ${
@@ -77,7 +77,7 @@ const MainChildSection = ({ offerningPageData }) => {
       </div>
 
       {/* Main Content */}
-      <div className="">
+      <div className="flex-grow ">
         {/* Overview Section */}
         <div data-section="overview" ref={overviewRef} className="w-full">
           <Overview
@@ -88,7 +88,7 @@ const MainChildSection = ({ offerningPageData }) => {
         </div>
 
         {/* Aspire Edge Section */}
-        <div data-section="aspireEdge" ref={aspireEdgeRef} className="w-full">
+        <div data-section="aspireEdge" ref={aspireEdgeRef} className="w-full ">
           <AspireEdge
             AspireEdgeSlicePageData={offerningPageData?.offerningSlices?.filter(
               (slice) => slice.__typename === "ComponentAspireEdgeSliceAspireEdgeSlice"
@@ -97,7 +97,7 @@ const MainChildSection = ({ offerningPageData }) => {
         </div>
 
         {/* Key Offerning Section */}
-        <div data-section="keyOfferning" ref={keyOfferningRef} className="w-full">
+        <div data-section="keyOfferning" ref={keyOfferningRef} className="w-full ">
           <KeyOfferning
             KeyOfferningPageData={offerningPageData?.offerningSlices?.filter(
               (slice) => slice.__typename === "ComponentKeyOfferningSliceKeyOfferningSlice"
@@ -106,7 +106,7 @@ const MainChildSection = ({ offerningPageData }) => {
         </div>
 
         {/* Technologies Section */}
-        <div data-section="technologies" ref={technologiesRef} className="w-full">
+        <div data-section="technologies" ref={technologiesRef} className="w-full ">
           <Technologies
             TechnologyPageData={offerningPageData?.offerningSlices?.filter(
               (slice) => slice.__typename === "ComponentTechnologiesSlicesTechnologiesSlices"
@@ -115,7 +115,7 @@ const MainChildSection = ({ offerningPageData }) => {
         </div>
 
         {/* Our Process Section */}
-        <div data-section="ourProcess" ref={ourProcessRef} className="w-full">
+        <div data-section="ourProcess" ref={ourProcessRef} className="w-full ">
           <OurProcess
             OurProcessPageData={offerningPageData?.offerningSlices?.filter(
               (slice) => slice.__typename === "ComponentOfferningSliceOurProccess"
@@ -124,7 +124,7 @@ const MainChildSection = ({ offerningPageData }) => {
         </div>
 
         {/* Client Testimonials Section */}
-        <div data-section="clientTestimonials" ref={clientTestimonialsRef} className="w-full">
+        <div data-section="clientTestimonials" ref={clientTestimonialsRef} className="w-full ">
           <Client
             ClientPageData={offerningPageData?.offerningSlices?.filter(
               (slice) => slice.__typename === "ComponentOfferningSliceClientTestimonialSlice"

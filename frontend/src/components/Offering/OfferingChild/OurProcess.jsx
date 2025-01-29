@@ -20,7 +20,7 @@ const OurProcess = () => {
   }
 
   return (
-    <div className="py-8 bg-white container  mx-auto my-12 p-8 py-8">
+    <div className="bg-white container  mx-auto  py-8">
       {/* Section Heading */}
       <h2 className="text-[#0D1B2F] text-[20px] sm:text-[30px] lg:text-[40px] font-bold mb-8">
         {ourProcessData?.Heading || "Our Process"}
@@ -29,7 +29,7 @@ const OurProcess = () => {
       {/* Process Steps Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
         {ourProcessData?.ProcessDetails?.map((step, stepIndex) => (
-          <div key={stepIndex} className="container mx-auto mb-12">
+          <div key={stepIndex} className="">
             <div className="relative duration-300 group shadow-none group-hover:p-0 group-hover:shadow-none">
               <div className="flex flex-col sm:flex-row md:w-[110%] sm:mt-0">
                 {/* Step Details */}

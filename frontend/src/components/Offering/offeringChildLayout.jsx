@@ -7,10 +7,7 @@ const OfferningLayout = ({ offerningPageData }) => {
   return (
     <div>
       {/* <HeroSection /> */}
-      <div className="container mx-auto">
-
       <MainChildSection offerningPageData={offerningPageData}/>
-      </div>
       {/* Uncomment the SEO logic if needed */}
       {/* {seo ? <SEO data={seo} /> : null} */}
     </div>

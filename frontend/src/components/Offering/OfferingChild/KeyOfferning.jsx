@@ -22,8 +22,8 @@ const KeyOfferning = () => {
   }
 
   return (
-    <div className="bg-gradient-to-t from-[#FFFFFF] to-[#F5F4FA] py-8">
-      <div className="container mx-auto my-12 p-8">
+    <div className="bg-gradient-to-t from-[#FFFFFF] to-[#F5F4FA]">
+      <div className="container mx-auto  py-8">
         {/* Section Heading */}
         <h2 className="text-[#0D1B2F] text-[20px] sm:text-[30px] lg:text-[40px] font-bold mb-8">
           {keyOfferingData?.Heading || "No Heading Available"}
@@ -34,7 +34,7 @@ const KeyOfferning = () => {
           {keyOfferingData?.AspireEdgeCards?.map((card, cardIndex) => (
             <div
               key={cardIndex}
-              className="relative border-l border-[#959595] mb-6 w-full max-w-full sm:max-w-[240px] lg:max-w-[299px] h-auto sm:h-[260px] lg:h-[320px] justify-center items-center p-6 mx-auto"
+              className="relative border-l border-[#959595] mb-6 w-full max-w-full h-auto justify-center items-center p-6 mx-auto"
             >
               {/* Card Icon */}
               {card?.icons?.url && (

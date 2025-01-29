@@ -137,7 +137,7 @@ const Client = () => {
   return (
     <div className="bg-white container mx-auto py-8">
       {clientData?.map((client, index) => (
-        <div key={index} className="mb-12">
+        <div key={index} className="">
           <div>
             <div className="grid grid-cols-1 md:grid-cols-[70%_30%]">
               <div className="bg-white rounded-lg">

@@ -35,7 +35,7 @@ const AspireEdge = () => {
               <a
                 key={cardIndex}
                 href={card?.link?.href || "#"}
-                className="relative bg-white border border-[#0D1B2F33] rounded-xl w-full hover:border-[#FF5E3A] max-w-full sm:max-w-[240px] lg:max-w-[299px] h-auto sm:h-[260px] lg:h-[300px] justify-center items-center p-6 mx-auto"
+                className="relative bg-white border border-[#0D1B2F33] rounded-xl w-full hover:border-[#FF5E3A] max-w-full  justify-center items-center p-8 mx-auto"
               >
                 <div className="mb-4">
                   <Images

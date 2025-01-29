@@ -19,9 +19,9 @@ const Overview = () => {
   }
 
   return (
-    <div className="py-8">
+    <div className=" container mx-auto py-8">
       {overviewData?.map((item, index) => (
-        <div key={index} className="container mx-auto">
+        <div key={index} className="">
           <h2 className="text-[#0D1B2F] text-[20px] sm:text-[30px] lg:text-[40px] font-bold mb-4">
             {item.Heading}
           </h2>

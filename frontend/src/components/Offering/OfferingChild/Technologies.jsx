@@ -18,9 +18,9 @@ const Technologies = () => {
   }
 
   return (
-    <div className="bg-[#F5F4FA] py-8">
+    <div className="bg-[#F5F4FA] ">
       {TechnologyPageData.map((item, index) => (
-        <div key={index} className="container mx-auto my-12 p-8">
+        <div key={index} className="container mx-auto py-8">
           <h2 className="text-[#0D1B2F] text-[20px] sm:text-[30px] lg:text-[40px] font-bold mb-8">
             {item.Heading}
           </h2>
@@ -29,7 +29,7 @@ const Technologies = () => {
           {/* Cards Section */}
           <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 ">
             {item?.AspireEdgeCards?.map((card, cardIndex) => (
-              <div key={cardIndex} className="w-full max-w-[380px] h-[411px] mx-auto">
+              <div key={cardIndex} className="w-full  mx-auto">
                 <a href={card?.href || "#"} className="block w-full h-full  relative" target="_blank" rel="noopener noreferrer" >
                   <div className="w-full z-10 h-[357px] bg-white group rounded-2xl mt-16 p-6 relative">
                     <div
