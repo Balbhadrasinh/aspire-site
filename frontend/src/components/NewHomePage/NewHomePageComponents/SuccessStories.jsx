@@ -5,11 +5,23 @@ import "swiper/css/navigation";
 import Images from "../../Shared/Image";
 import Links from "../../Shared/Links";
 import Icon from "../../icons/icon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const SuccessStories = ({ successData }) => {
   const [progress, setProgress] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(1); // Initialize to 1
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Set `isMobile` if width is less than 768px
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const totalSlides = successData?.tabs?.length || 1;
 
@@ -21,14 +33,14 @@ const SuccessStories = ({ successData }) => {
             {successData?.title}
           </h2>
           <div className="flex gap-2">
-            <button className="success-swiper-button-prev p-4 bg-[#FD644F] rounded-full transition-all">
+            <button className="success-swiper-button-prev p-4 bg-[#FD644F] rounded-full ">
               <Icon name="left" size={16} color="#ffffff" />
             </button>
-            <button className="success-swiper-button-next p-4 bg-[#FD644F] rounded-full transition-all">
+            <button className="success-swiper-button-next p-4 bg-[#FD644F] rounded-full">
               <Icon name="right" size={16} color="#ffffff" />
             </button>
 
-            <div className="flex ml-4 items-center gap-6">
+            <div className="flex ml-4 hidden lg:show items-center gap-6">
               <div className="relative w-[12rem] h-2 bg-gray-200 rounded-full overflow-hidden">
                 <div
                   className="absolute top-0 left-0 h-full bg-[#FD644F] transition-all duration-500"
@@ -55,16 +67,17 @@ const SuccessStories = ({ successData }) => {
             768: { slidesPerView: 1 },
             1200: { slidesPerView: 1 },
           }}
+          autoHeight={isMobile}
           className="relative"
           onSlideChange={(swiper) => {
-            setCurrentSlide(swiper.activeIndex + 1); // Update active slide number
+            setCurrentSlide(swiper.activeIndex + 1);
             const newProgress = ((swiper.activeIndex + 1) / totalSlides) * 100;
             setProgress(newProgress);
           }}
         >
           {successData?.tabs?.map((content, index) => (
             <SwiperSlide key={index}>
-              <div className="duration-1000 rounded-3xl">
+              <div className="duration-1000 mt-12 rounded-3xl">
                 <div className="lg:grid grid-cols-6">
                   <div className="col-span-3 lg:w-[95%]">
                     <h3 className="text-[3rem] text-[#0D1B2F] font-[500] leading-[3rem]">

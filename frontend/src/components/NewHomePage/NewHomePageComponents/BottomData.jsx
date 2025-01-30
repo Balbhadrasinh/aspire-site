@@ -107,7 +107,7 @@ const BottomData = ({ cards, techLogoImage }) => {
             <h6 className={`text-[#0D1B2F] heading-two pt-2`}>
               {singleCard?.number}
             </h6>
-            <p className="text-[#0D1B2FCC] paragraph-no-color relative -top-6 sm:top-0">
+            <p className="text-[#0D1B2FCC] paragraph-no-color relative lg:-top-6 sm:top-0">
               {singleCard?.title}
             </p>
           </div>

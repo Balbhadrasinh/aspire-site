@@ -33,17 +33,16 @@ const HeroSection = ({ HeroData }) => {
           />
         </div>
 
-        <div className="container mx-auto px-4 sm:px-12 md:px-0 z-10">
+        <div className="container  mx-auto sm:px-12 md:px-0 z-10">
           <div className={` op-hero-one lg:w-[60%]`}>
             <div className={`left mx-6 xxs:mx-0`}>
               <h1 className={`heading-two-hero text-[#0D1B2F]`}>
                 {HeroData?.title}
               </h1>
-              <p
-                className={`mt-10 mb-8 hero-markdown leading-10 text-[#0D1B2FCC]`}
-              >
+              <p className="mt-10 mb-8 leading-10 text-[#0D1B2FCC] break-words overflow-wrap">
                 {HeroData?.richText}
               </p>
+
               <div className="sm:flex gap-8">
                 {HeroData?.newHomeHeroButtons != undefined &&
                   HeroData?.newHomeHeroButtons.length > 0 &&
@@ -70,8 +69,7 @@ const HeroSection = ({ HeroData }) => {
           </div>
         </div>
         <div className="absolute bottom-0 w-full">
-          {/* Container for partners section */}
-          <div className="container mx-auto flex gap-24 mb-[3%]">
+          <div className="container mx-auto lg:show hidden flex gap-24 mb-[3%]">
             {HeroData?.partnersTitle && (
               <p className=" text-[#FF5E3A] text-[2.2rem] font-[600]">
                 {HeroData?.partnersTitle}
